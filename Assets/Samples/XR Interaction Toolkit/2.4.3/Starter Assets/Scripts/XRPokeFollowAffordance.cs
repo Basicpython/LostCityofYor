@@ -6,6 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.Primitives;
 
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 {
+	
+	
     /// <summary>
     /// Follow animation affordance for <see cref="IPokeStateDataProvider"/>, such as <see cref="XRPokeFilter"/>.
     /// Used to animate a pressed transform, such as a button to follow the poke position.
@@ -13,6 +15,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
     [AddComponentMenu("XR/XR Poke Follow Affordance", 22)]
     public class XRPokeFollowAffordance : MonoBehaviour
     {
+		bool pressed = false;
         [SerializeField]
         [Tooltip("Transform that will move in the poke direction when this or a parent GameObject is poked." +
                  "\nNote: Should be a direct child GameObject.")]
@@ -172,6 +175,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         void OnTransformTweenableVariableUpdated(float3 position)
         {
             m_PokeFollowTransform.localPosition = position;
+			pressed = true;
         }
 
         void OnPokeStateDataUpdated(PokeStateData data)
@@ -192,6 +196,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             else if (m_ReturnToInitialPosition)
             {
                 m_TransformTweenableVariable.target = m_InitialPosition;
+				pressed = false;
             }
         }
 
