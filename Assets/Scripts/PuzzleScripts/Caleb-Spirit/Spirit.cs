@@ -78,7 +78,7 @@ public class Spirit : MonoBehaviour {
             
             case PuzzleStateType.CompletedPuzzle1:
                 // Player solved Puzzle 1, yippee!
-                //Say();
+                Say("CompletedPuzzle1");
                 ChangeState(PuzzleStateType.Dialogue2);
                 break;
             /*
