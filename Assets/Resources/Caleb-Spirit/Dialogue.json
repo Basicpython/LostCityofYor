@@ -1,0 +1,142 @@
+{
+    "Greeting": [
+        {
+            "text": "",
+            "timeToShow": 0,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "Dialogue1": [
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "CompletedPuzzle1": [
+        {
+            "text": "",
+            "timeToShow": 0,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "Dialogue2": [
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "CompletedPuzzle2": [
+        {
+            "text": "",
+            "timeToShow": 0,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "Dialogue3": [
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "CompletedPuzzle3": [
+        {
+            "text": "",
+            "timeToShow": 0,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "Dialogue4": [
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "CompletedPuzzle4": [
+        {
+            "text": "",
+            "timeToShow": 0,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "Dialogue5": [
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "CompletedPuzzle5": [
+        {
+            "text": "",
+            "timeToShow": 0,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "Farewell": [
+        {
+            "text": "",
+            "timeToShow": 0,
+            "tone": "neutral",
+            "said": false
+        }
+    ],
+    "Idle": [
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "",
+            "timeToShow": 10,
+            "tone": "neutral",
+            "said": false
+        }
+    ]
+}
