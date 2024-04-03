@@ -51,9 +51,14 @@ public class Spirit : MonoBehaviour {
         State = PuzzleStateType.Inactive;
         isSpeaking = false;
 
-        textMeshPro = transform.Find("Text").GetComponent<TextMeshProUGUI>();
+        Transform textTransform = transform.Find("Text");
+        if (textTransform == null) {
+            Debug.LogWarning("Child GameObject with the name 'Text' not found.");
+        }
+        
+        textMeshPro = textTransform.GetComponent<TextMeshProUGUI>();
         if (textMeshPro == null) {
-            Debug.LogWarning("No TexMeshPro component found on Spirit.");
+            Debug.LogWarning("TextMeshPro component not found on 'Text' GameObject.");
         }
 
         TextAsset dialogueTextAsset = Resources.Load<TextAsset>("Caleb-Spirit/Dialogue");
@@ -61,8 +66,22 @@ public class Spirit : MonoBehaviour {
         if (dialogueData == null) {
             Debug.LogWarning("Spirit's dialogue file not loaded.");
         }
+        LogDialogueData(dialogueData);
 
         Say("Greeting");
+    }
+
+    void LogDialogueData(Dictionary<string, List<DialogueEntry>> data)
+    {
+        foreach (KeyValuePair<string, List<DialogueEntry>> pair in data)
+        {
+            Debug.Log("Section: " + pair.Key);
+            List<DialogueEntry> entries = pair.Value;
+            foreach (DialogueEntry entry in entries)
+            {
+                Debug.Log("Text: " + entry.text + ", Time to Show: " + entry.timeToShow + ", Tone: " + entry.tone + ", Said: " + entry.said);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -144,7 +163,9 @@ public class Spirit : MonoBehaviour {
             Thread.Sleep(500); // Wait until dialogue is done
         }
 
-        StopCoroutine(chat); // Stop chat
+        if (chat != null) {
+            StopCoroutine(chat); // Stop chat
+        }
         isSpeaking = true; // Now speaking
 
 
