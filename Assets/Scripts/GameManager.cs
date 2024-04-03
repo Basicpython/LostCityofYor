@@ -28,7 +28,32 @@ public class GameManager : MonoBehaviour {
         State = GameStateType.Open;
     }
 
-    public void ChangeState(GameStateType newState) {
+    void Update() {
+        switch (State) {
+            case GameStateType.Open:
+                break;
+            case GameStateType.Start:
+                break;
+            case GameStateType.SolvedPuzzle1:
+                break;
+            case GameStateType.SolvedPuzzle2:
+                break;
+            case GameStateType.SolvedPuzzle3:
+                break;
+            case GameStateType.SolvedPuzzle4:
+                break;
+            case GameStateType.SolvedPuzzle5:
+                break;
+            case GameStateType.End:
+                break;
+        }
+    }
+
+    private void ChangeState(GameStateType newState) {
         State = newState;
+    }
+
+    public void NextState() {
+        ChangeState((GameStateType)((int)State + 1));
     }
 }
