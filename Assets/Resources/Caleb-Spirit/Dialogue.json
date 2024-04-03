@@ -1,7 +1,7 @@
 {
     "Greeting": [
         {
-            "text": "",
+            "text": "This is the greeting test.",
             "timeToShow": 0,
             "tone": "neutral",
             "said": false
