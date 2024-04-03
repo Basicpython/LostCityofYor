@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
+using TMPro;
 
 public enum PuzzleStateType {
         Inactive,
@@ -25,6 +26,7 @@ public class Spirit : MonoBehaviour {
     public PuzzleStateType State { get; private set; }
     private bool isSpeaking;
     private Coroutine chat;
+    private TextMeshProUGUI textMeshPro;
 
     private class DialogueEntry {
         public string text;
@@ -49,11 +51,18 @@ public class Spirit : MonoBehaviour {
         State = PuzzleStateType.Inactive;
         isSpeaking = false;
 
+        textMeshPro = transform.Find("Text").GetComponent<TextMeshProUGUI>();
+        if (textMeshPro == null) {
+            Debug.LogWarning("No TexMeshPro component found on Spirit.");
+        }
+
         TextAsset dialogueTextAsset = Resources.Load<TextAsset>("Caleb-Spirit/Dialogue");
         dialogueData = JsonUtility.FromJson<Dictionary<string, List<DialogueEntry>>>(dialogueTextAsset.text);
         if (dialogueData == null) {
             Debug.LogWarning("Spirit's dialogue file not loaded.");
         }
+
+        Say("Greeting");
     }
 
     // Update is called once per frame
@@ -129,7 +138,7 @@ public class Spirit : MonoBehaviour {
     }
 
 
-
+    /**/
     private void Say(string sectionName) {
         while (isSpeaking) { // If spirit is alread saying something
             Thread.Sleep(500); // Wait until dialogue is done
@@ -147,6 +156,7 @@ public class Spirit : MonoBehaviour {
         foreach (DialogueEntry entry in dialogueEntries) {
             if (!entry.said) {
                 // make the text appear (entry.text)
+                textMeshPro.text = entry.text;
                 // sound (entry.tone)
 
                 if (entry.timeToShow == 0f) { // timeToShow = 0
