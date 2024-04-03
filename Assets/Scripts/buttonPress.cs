@@ -26,21 +26,26 @@ public class buttonPress : MonoBehaviour
 		interactable.hoverExited.AddListener(Reset);
 		interactable.selectEntered.AddListener(Freeze);
     }
-	
-	public void Follow(BaseInteractionEventArgs hover){
-		if(hover.interactorObject is XRPokeInteractor){
+
+
+	public void Follow(BaseInteractionEventArgs hover)
+	{
+		if (hover.interactorObject is XRPokeInteractor)
+		{
 			XRPokeInteractor interactor = (XRPokeInteractor)hover.interactorObject;
-			
+
 			pokeAttachTransform = interactor.attachTransform;
 			offset = visualTarget.position - pokeAttachTransform.position;
-			
+
 			float pokeAngle = Vector3.Angle(offset, visualTarget.TransformDirection(localAxis));
-			if (pokeAngle < followAngleThreshhold){
+			if (pokeAngle < followAngleThreshhold)
+			{
 				isFollowing = true;
-				freeze = false;	
+				freeze = false;
 			}
 		}
 	}
+
 	
 	public void Reset(BaseInteractionEventArgs hover){
 		if(hover.interactorObject is XRPokeInteractor){
