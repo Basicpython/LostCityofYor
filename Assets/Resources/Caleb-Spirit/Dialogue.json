@@ -55,13 +55,13 @@
     ],
     "Dialogue2": [
         {
-            "text": "",
+            "text": "C2-0",
             "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
-            "text": "",
+            "text": "C2-1",
             "time": 10,
             "tone": "neutral",
             "said": false
@@ -69,7 +69,7 @@
     ],
     "CompletedPuzzle2": [
         {
-            "text": "",
+            "text": "D2",
             "time": 0,
             "tone": "neutral",
             "said": false
@@ -77,13 +77,13 @@
     ],
     "Dialogue3": [
         {
-            "text": "",
+            "text": "C3-0",
             "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
-            "text": "",
+            "text": "C3-1",
             "time": 10,
             "tone": "neutral",
             "said": false
@@ -91,7 +91,7 @@
     ],
     "CompletedPuzzle3": [
         {
-            "text": "",
+            "text": "D3",
             "time": 0,
             "tone": "neutral",
             "said": false
@@ -99,13 +99,13 @@
     ],
     "Dialogue4": [
         {
-            "text": "",
+            "text": "C4-0",
             "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
-            "text": "",
+            "text": "C4-1",
             "time": 10,
             "tone": "neutral",
             "said": false
@@ -113,7 +113,7 @@
     ],
     "CompletedPuzzle4": [
         {
-            "text": "",
+            "text": "D4",
             "time": 0,
             "tone": "neutral",
             "said": false
@@ -121,13 +121,13 @@
     ],
     "Dialogue5": [
         {
-            "text": "",
+            "text": "C5-0",
             "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
-            "text": "",
+            "text": "C5-1",
             "time": 10,
             "tone": "neutral",
             "said": false
@@ -135,7 +135,7 @@
     ],
     "CompletedPuzzle5": [
         {
-            "text": "",
+            "text": "D5",
             "time": 0,
             "tone": "neutral",
             "said": false
@@ -143,7 +143,7 @@
     ],
     "Farewell": [
         {
-            "text": "",
+            "text": "That's all folks!",
             "time": 0,
             "tone": "neutral",
             "said": false
@@ -151,13 +151,13 @@
     ],
     "Idle": [
         {
-            "text": "",
+            "text": "I-0",
             "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
-            "text": "",
+            "text": "I-1",
             "time": 10,
             "tone": "neutral",
             "said": false

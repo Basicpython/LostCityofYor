@@ -39,7 +39,7 @@ public class Spirit : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        State = PuzzleStateType.Greeting;
+        State = PuzzleStateType.Dialogue4;
     }
 
     // Update is called once per frame
