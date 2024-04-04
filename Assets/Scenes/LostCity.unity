@@ -6754,7 +6754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9869,7 +9869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2933198f06a6c564caaa38ffb19ae0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 0}
+  playerTransform: {fileID: 2025032157}
   movementSpeed: 1
   lagFactor: 0.5
   radius: 5
@@ -9885,7 +9885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d531f807b876e6444a5be85323a82898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 0}
+  playerTransform: {fileID: 2025032157}
   rotationSpeed: 3
   lagFactor: 0.5
 --- !u!1 &1745394095
@@ -11774,6 +11774,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c7991c1cb1d2842b473ca42611253c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2025032157 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9014170783809206335, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+  m_PrefabInstance: {fileID: 452463679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2112377587
 GameObject:
   m_ObjectHideFlags: 0
