@@ -21,6 +21,8 @@ public class TabletManager : MonoBehaviour
     public GameObject guthixTablet;
     public GameObject ancientTablet;
 
+    public GameObject symbol3;
+
     // Set default placement, correct placement
     private void Start()
     {
@@ -33,6 +35,8 @@ public class TabletManager : MonoBehaviour
         zamorakPlaced = false;
         guthixPlaced = false;
         ancientPlaced = false;
+
+        symbol3.SetActive(false);
     }
 
     // Tablets are in the correct order if all placement flags are true
@@ -48,10 +52,13 @@ public class TabletManager : MonoBehaviour
             if (!CheckTabletOrder())
             {
                 Debug.Log("Incorrect Order !!!");
+                symbol3.SetActive(false);
             }
             else
             {
                 Debug.Log("All Tablets Are In The Correct Spot !!!");
+                GameManager.instance.NextState();
+                symbol3.SetActive(true);
             }
         }
     }

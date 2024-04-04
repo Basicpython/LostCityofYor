@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18306622, g: 0.2287434, b: 0.30669293, a: 1}
+  m_IndirectSpecularColor: {r: 0.18306595, g: 0.2287429, b: 0.3066922, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3432,6 +3432,7 @@ MonoBehaviour:
   zamorakTablet: {fileID: 1888417945}
   guthixTablet: {fileID: 897224236}
   ancientTablet: {fileID: 1523075797}
+  symbol3: {fileID: 1048339316}
 --- !u!54 &618610181
 Rigidbody:
   m_ObjectHideFlags: 0
