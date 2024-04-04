@@ -1064,7 +1064,7 @@ MonoBehaviour:
   playerTransform: {fileID: 1714078752}
   movementSpeed: 1
   lagFactor: 0.5
-  radius: 3
+  radius: 5
 --- !u!114 &879349793
 MonoBehaviour:
   m_ObjectHideFlags: 0
