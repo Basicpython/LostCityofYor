@@ -9,13 +9,13 @@
     ],
     "Dialogue1": [
         {
-            "text": "",
+            "text": "D1",
             "timeToShow": 10,
             "tone": "neutral",
             "said": false
         },
         {
-            "text": "",
+            "text": "D2",
             "timeToShow": 10,
             "tone": "neutral",
             "said": false
