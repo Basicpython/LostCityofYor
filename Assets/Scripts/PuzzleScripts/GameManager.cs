@@ -16,6 +16,8 @@ public enum GameStateType {
 public class GameManager : MonoBehaviour {
     public static GameManager instance;
     public GameStateType State { get; private set; }
+	public GameObject MiddleButtons;
+	public GameObject ExitButtons;
     
     void Awake() {
         if (instance == null) {
@@ -37,10 +39,14 @@ public class GameManager : MonoBehaviour {
             case GameStateType.SolvedPuzzle1:
                 break;
             case GameStateType.SolvedPuzzle2:
+				// after the first two puzzles finish initialize the door buttons
+				MiddleButtons.SetActive(true);
                 break;
             case GameStateType.SolvedPuzzle3:
                 break;
             case GameStateType.SolvedPuzzle4:
+				// after the next two puzzles finish initialize the door buttons
+				ExitButtons.SetActive(true);
                 break;
             case GameStateType.SolvedPuzzle5:
                 break;
