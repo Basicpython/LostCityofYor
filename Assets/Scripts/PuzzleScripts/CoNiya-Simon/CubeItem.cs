@@ -163,6 +163,7 @@ public class CubeItem : MonoBehaviour
         {
 			SymbolPanel.SetActive(true);
             solved = true;
+            GameManager.instance.NextState();
         }
     }
 }
