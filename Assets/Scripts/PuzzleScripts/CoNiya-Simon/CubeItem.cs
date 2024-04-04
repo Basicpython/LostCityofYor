@@ -14,6 +14,7 @@ public class CubeItem : MonoBehaviour
     public GameObject bluebutton;
     public GameObject purplebutton;
     public GameObject ActivatedButton;
+	public GameObject SymbolPanel;
 
     private float[] simonSequence;
     private float[] currentSequence;
@@ -22,6 +23,7 @@ public class CubeItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		SymbolPanel.SetActive(false);
         simonSequence = new float[6];
         currentSequence = new float[6];
         simonSequence[0] = 1f;
@@ -159,7 +161,7 @@ public class CubeItem : MonoBehaviour
 
         if (simonSequence[5] == currentSequence[5] && solved == false)
         {
-            print("solved");
+			SymbolPanel.SetActive(true);
             solved = true;
         }
     }

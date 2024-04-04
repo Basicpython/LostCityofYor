@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18306574, g: 0.22874251, b: 0.30669183, a: 1}
+  m_IndirectSpecularColor: {r: 0.18306622, g: 0.2287434, b: 0.30669293, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6400,7 +6400,7 @@ Transform:
   m_GameObject: {fileID: 1048144316}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.867, y: 1.54, z: -2.12}
+  m_LocalPosition: {x: 4.867, y: 1.265, z: -2.12}
   m_LocalScale: {x: 1.85, y: 1.100532, z: 0.9775}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6503,6 +6503,7 @@ MonoBehaviour:
   bluebutton: {fileID: 997266846}
   purplebutton: {fileID: 2137650651}
   ActivatedButton: {fileID: 935885499}
+  SymbolPanel: {fileID: 933081}
 --- !u!1 &1048339316
 GameObject:
   m_ObjectHideFlags: 0
