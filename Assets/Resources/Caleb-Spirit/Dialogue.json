@@ -1,30 +1,54 @@
 {
     "Greeting": [
         {
-            "text": "This is the greeting test.",
-            "timeToShow": 0,
+            "text": "Hey! I'm the Spirit 'Puzzle' by Caleb! Ok, well, I'm not really a puzzle. But I have lots of cool code under my hood! I'll talk more about this later.",
+            "time": 0,
             "tone": "neutral",
             "said": false
         }
     ],
     "Dialogue1": [
         {
-            "text": "D1",
-            "timeToShow": 10,
+            "text": "The premise behind what my puzzle is that I will talk to the player, just as I'm doing now.",
+            "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
-            "text": "D2",
-            "timeToShow": 10,
+            "text": "And every once in a while I'll say a few things that the user has to pick up on.",
+            "time": 5,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "This information will be hidden amongst other dialogue that also help immerse the player into a world full of rich lore and details.",
+            "time": 10,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "It will be the player's job to figure out what to do with this information. They'll have to complete a task that they normally wouldn't be able to without a piece of information I give them.",
+            "time": 15,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "What that task is is still undetermined. Not because I'm lazy but because I prioritized getting the idea of the puzzle actuallized before the actual puzzle itself.",
+            "time": 10,
+            "tone": "neutral",
+            "said": false
+        },
+        {
+            "text": "So far, I'm happy with how this is coming along so far. It did take 12+ hours to get it to this stage however... Anyways, I'll get back to you after you solve the next puzzle! Good luck!",
+            "time": 15,
             "tone": "neutral",
             "said": false
         }
     ],
     "CompletedPuzzle1": [
         {
-            "text": "",
-            "timeToShow": 0,
+            "text": "Great job! You completed the first puzzle!",
+            "time": 0,
             "tone": "neutral",
             "said": false
         }
@@ -32,13 +56,13 @@
     "Dialogue2": [
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         }
@@ -46,7 +70,7 @@
     "CompletedPuzzle2": [
         {
             "text": "",
-            "timeToShow": 0,
+            "time": 0,
             "tone": "neutral",
             "said": false
         }
@@ -54,13 +78,13 @@
     "Dialogue3": [
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         }
@@ -68,7 +92,7 @@
     "CompletedPuzzle3": [
         {
             "text": "",
-            "timeToShow": 0,
+            "time": 0,
             "tone": "neutral",
             "said": false
         }
@@ -76,13 +100,13 @@
     "Dialogue4": [
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         }
@@ -90,7 +114,7 @@
     "CompletedPuzzle4": [
         {
             "text": "",
-            "timeToShow": 0,
+            "time": 0,
             "tone": "neutral",
             "said": false
         }
@@ -98,13 +122,13 @@
     "Dialogue5": [
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         }
@@ -112,7 +136,7 @@
     "CompletedPuzzle5": [
         {
             "text": "",
-            "timeToShow": 0,
+            "time": 0,
             "tone": "neutral",
             "said": false
         }
@@ -120,7 +144,7 @@
     "Farewell": [
         {
             "text": "",
-            "timeToShow": 0,
+            "time": 0,
             "tone": "neutral",
             "said": false
         }
@@ -128,13 +152,13 @@
     "Idle": [
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         },
         {
             "text": "",
-            "timeToShow": 10,
+            "time": 10,
             "tone": "neutral",
             "said": false
         }

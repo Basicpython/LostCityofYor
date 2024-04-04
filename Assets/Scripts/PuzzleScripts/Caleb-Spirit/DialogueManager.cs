@@ -9,11 +9,17 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] TextAsset jsonData;
     [SerializeField] Dialogue dialogue;
 
+    public static DialogueManager Instance; 
+    void Awake(){ 
+        Instance = this; 
+    }
+
     void Start()
     {
         jsonData = Resources.Load<TextAsset>("Caleb-Spirit/Dialogue");
         dialogue = JsonUtility.FromJson<Dialogue>(jsonData.text);
         isSpeaking = false;
+        dialogueOpen = GetComponentInChildren<DialogueOpen>();
     }
     
     private List<Phrase> phrases = null;
@@ -67,7 +73,9 @@ public class DialogueManager : MonoBehaviour
     }
 
     public TMP_Text tmpText;
-    public bool isSpeaking { get; private set; }
+    private DialogueOpen dialogueOpen;
+
+    public bool isSpeaking;
     public bool isChatQueued { get; private set; }
     private Coroutine chat;
 
@@ -86,17 +94,23 @@ public class DialogueManager : MonoBehaviour
         isSpeaking = true;
 
         tmpText.text = phrase.text;
-        Debug.Log($"Saying '{phrase.text}'");
-        tmpText.enabled = true;
+        dialogueOpen.OpenPanel();
+        //Debug.Log($"Saying '{phrase.text}'");
 
         if (phrase.time > 0) {
-            yield return new WaitForSeconds(phrase.time);
-        } else {
-            yield return new WaitForSeconds(5);
-        }
+            for (int i = phrase.time; i > 0 & dialogueOpen.isOpen == true; i--) {
+                yield return new WaitForSeconds(1);
+            }
 
-        tmpText.enabled = false;
+        } else {
+            while (dialogueOpen.isOpen == true) {
+                yield return new WaitForSeconds(1);
+            }
+        }
+        //Debug.Log("Closing dialogue");
+        dialogueOpen.ClosePanel();
         isSpeaking = false;
+        
     }
 
     // Chat
@@ -106,17 +120,29 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    private bool thing;
+
     private IEnumerator ChatRoutine(List<Phrase> phrases){
         isChatQueued = true;
         while (true) {
-            Debug.Log("Queueing idle chat");
-            yield return new WaitForSeconds(10f);
+            while (isSpeaking) {
+                yield return new WaitForSeconds(1f);
+            }
+
+            //Debug.Log("Queueing idle chat.");
+            yield return new WaitForSeconds(1f); // Time between Chats
             foreach (Phrase phrase in phrases){
+                thing = true;
                 if (!phrase.said) {
                     StartCoroutine(SayRoutine(phrase));
                     phrase.said = true;
+                    thing = false;
                     break;
                 }
+            }
+            if (thing) {
+                //Debug.Log("No more Chats, advancing to next puzzleState");
+                //GameManager.instance.NextState();
             }
         }
     }
