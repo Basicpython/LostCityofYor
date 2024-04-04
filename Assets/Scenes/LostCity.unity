@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18306622, g: 0.2287434, b: 0.30669293, a: 1}
+  m_IndirectSpecularColor: {r: 0.18306574, g: 0.22874251, b: 0.30669183, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -839,7 +839,7 @@ MonoBehaviour:
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: d4189989760cf794bb066d29e2a30a41, type: 2}
+          m_ObjectArgument: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -980,7 +980,7 @@ Transform:
   m_GameObject: {fileID: 207876940}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
+  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.019}
   m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1113,7 +1113,7 @@ MonoBehaviour:
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: d4189989760cf794bb066d29e2a30a41, type: 2}
+          m_ObjectArgument: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2551,7 +2551,7 @@ Transform:
   m_GameObject: {fileID: 390479327}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
+  m_LocalPosition: {x: 0.104, y: 0.33878005, z: -0.091}
   m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2663,7 +2663,7 @@ MonoBehaviour:
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: d4189989760cf794bb066d29e2a30a41, type: 2}
+          m_ObjectArgument: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3206,8 +3206,8 @@ Transform:
   m_GameObject: {fileID: 614994225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
-  m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
+  m_LocalPosition: {x: 0.106, y: 0.33878005, z: -0.087}
+  m_LocalScale: {x: 0.08525597, y: 0.4822925, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 725365226}
@@ -3482,7 +3482,7 @@ Transform:
   m_GameObject: {fileID: 667022067}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
+  m_LocalPosition: {x: 0.108, y: 0.33878005, z: -0.07480685}
   m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3594,7 +3594,7 @@ MonoBehaviour:
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: d4189989760cf794bb066d29e2a30a41, type: 2}
+          m_ObjectArgument: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -4064,7 +4064,7 @@ Transform:
   m_GameObject: {fileID: 709590949}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
+  m_LocalPosition: {x: 0.113, y: 0.33878005, z: -0.007}
   m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4176,7 +4176,7 @@ MonoBehaviour:
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: d4189989760cf794bb066d29e2a30a41, type: 2}
+          m_ObjectArgument: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5729,7 +5729,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
-  m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
+  m_LocalScale: {x: 0.08525597, y: 0.4822925, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595117552}
@@ -6061,6 +6061,7 @@ GameObject:
   - component: {fileID: 1048144320}
   - component: {fileID: 1048144319}
   - component: {fileID: 1048144318}
+  - component: {fileID: 1048144321}
   m_Layer: 0
   m_Name: Simon
   m_TagString: Untagged
@@ -6077,8 +6078,8 @@ Transform:
   m_GameObject: {fileID: 1048144316}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.867, y: 1.8, z: -2.12}
-  m_LocalScale: {x: 1.85, y: 0.184375, z: 0.9775}
+  m_LocalPosition: {x: 4.867, y: 1.54, z: -2.12}
+  m_LocalScale: {x: 1.85, y: 1.100532, z: 0.9775}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 862627033}
@@ -6160,6 +6161,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048144316}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1048144321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048144316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b15539c6eaab4bb30bfa800f95b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redbutton: {fileID: 1562406478}
+  orangebutton: {fileID: 1178389742}
+  yellowbutton: {fileID: 1317986012}
+  greenbutton: {fileID: 614994225}
+  bluebutton: {fileID: 997266846}
+  purplebutton: {fileID: 2137650651}
+  ActivatedButton: {fileID: 935885499}
 --- !u!1 &1126943074
 GameObject:
   m_ObjectHideFlags: 0
@@ -6358,8 +6378,8 @@ Transform:
   m_GameObject: {fileID: 1178389742}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.112, y: 0.33878005, z: -0.07480685}
-  m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
+  m_LocalPosition: {x: 0.116, y: 0.33878005, z: -0.011}
+  m_LocalScale: {x: 0.08525597, y: 0.4822925, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 255556839}
@@ -7611,8 +7631,8 @@ Transform:
   m_GameObject: {fileID: 1317986012}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
-  m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
+  m_LocalPosition: {x: 0.113, y: 0.33878005, z: -0.007}
+  m_LocalScale: {x: 0.08525597, y: 0.4822925, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 205854711}
@@ -8821,8 +8841,8 @@ Transform:
   m_GameObject: {fileID: 1562406478}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
-  m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
+  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.015}
+  m_LocalScale: {x: 0.08525597, y: 0.4822925, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 862627033}
@@ -12036,7 +12056,7 @@ Transform:
   m_GameObject: {fileID: 2130477771}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
+  m_LocalPosition: {x: 0.113, y: 0.33878005, z: -0.015}
   m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12148,7 +12168,7 @@ MonoBehaviour:
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: d4189989760cf794bb066d29e2a30a41, type: 2}
+          m_ObjectArgument: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -12254,8 +12274,8 @@ Transform:
   m_GameObject: {fileID: 2137650651}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09999998, y: 0.33878005, z: -0.07480685}
-  m_LocalScale: {x: 0.08525597, y: 0.79812974, z: 0.16050306}
+  m_LocalPosition: {x: 0.108, y: 0.33878005, z: -0.07480685}
+  m_LocalScale: {x: 0.08525597, y: 0.4822925, z: 0.16050306}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1995323191}
