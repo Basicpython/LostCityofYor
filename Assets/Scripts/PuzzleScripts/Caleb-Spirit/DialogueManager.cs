@@ -140,9 +140,9 @@ public class DialogueManager : MonoBehaviour
                     break;
                 }
             }
-            if (thing & Spirit.instance.State == PuzzleStateType.Dialogue4) {
-                Debug.Log("No more Chats, advancing to next puzzleState");
-                GameManager.instance.NextState();
+            if (thing) {
+                //Debug.Log("No more Chats, advancing to next puzzleState");
+                //GameManager.instance.NextState();
             }
         }
     }

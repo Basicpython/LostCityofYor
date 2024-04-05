@@ -69,7 +69,7 @@
     ],
     "CompletedPuzzle2": [
         {
-            "text": "D2",
+            "text": "Yippee! You finished the second puzzle! The door in the middle should open.",
             "time": 0,
             "tone": "neutral",
             "said": false
@@ -91,7 +91,7 @@
     ],
     "CompletedPuzzle3": [
         {
-            "text": "D3",
+            "text": "Wowza! You completed the third puzzle!",
             "time": 0,
             "tone": "neutral",
             "said": false
@@ -113,7 +113,7 @@
     ],
     "CompletedPuzzle4": [
         {
-            "text": "D4",
+            "text": "Hey! This is my puzzle! It's not done so it's passed automatically.",
             "time": 0,
             "tone": "neutral",
             "said": false
@@ -135,7 +135,7 @@
     ],
     "CompletedPuzzle5": [
         {
-            "text": "D5",
+            "text": "You finished the last puzzle! Congrats! You beat the game!",
             "time": 0,
             "tone": "neutral",
             "said": false
