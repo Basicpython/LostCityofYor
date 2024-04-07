@@ -93,24 +93,27 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator SayRoutine(Phrase phrase) {
         isSpeaking = true;
 
-        tmpText.text = phrase.text;
-        dialogueOpen.OpenPanel();
-        //Debug.Log($"Saying '{phrase.text}'");
+        foreach (Line line in phrase.lines) {
+            tmpText.text = line.text;
+            dialogueOpen.OpenPanel();
+            Debug.Log($"Saying '{line.text}'");
 
-        if (phrase.time > 0) {
-            for (int i = phrase.time; i > 0 & dialogueOpen.isOpen == true; i--) {
-                yield return new WaitForSeconds(1);
-            }
+            if (line.time > 0) {
+                for (int i = line.time; i > 0 & dialogueOpen.isOpen == true; i--) {
+                    yield return new WaitForSeconds(1);
+                }
 
-        } else {
-            while (dialogueOpen.isOpen == true) {
-                yield return new WaitForSeconds(1);
+            } else {
+                while (dialogueOpen.isOpen == true) {
+                    yield return new WaitForSeconds(1);
+                }
             }
+            //Debug.Log("Closing dialogue");
+            dialogueOpen.ClosePanel();
+            yield return new WaitForSeconds(1);
         }
-        //Debug.Log("Closing dialogue");
-        dialogueOpen.ClosePanel();
+
         isSpeaking = false;
-        
     }
 
     // Chat
@@ -120,7 +123,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private bool thing;
+    // private bool thing;
 
     private IEnumerator ChatRoutine(List<Phrase> phrases){
         isChatQueued = true;
@@ -130,20 +133,20 @@ public class DialogueManager : MonoBehaviour
             }
 
             //Debug.Log("Queueing idle chat.");
-            yield return new WaitForSeconds(1f); // Time between Chats
+            yield return new WaitForSeconds(10f); // Time between Chats
             foreach (Phrase phrase in phrases){
-                thing = true;
+                // thing = true;
                 if (!phrase.said) {
                     StartCoroutine(SayRoutine(phrase));
                     phrase.said = true;
-                    thing = false;
+                    // thing = false;
                     break;
                 }
             }
-            if (thing) {
-                //Debug.Log("No more Chats, advancing to next puzzleState");
-                //GameManager.instance.NextState();
-            }
+            // if (thing) {
+            //     Debug.Log("No more Chats, advancing to next puzzleState");
+            //     GameManager.instance.NextState();
+            // }
         }
     }
 }
@@ -169,10 +172,16 @@ public class Dialogue
 [System.Serializable]
 public class Phrase
 {
+    public List<Line> lines;
+    public bool said;
+}
+
+[System.Serializable]
+public class Line
+{
     public string text;
     public int time;
     public string tone;
-    public bool said;
 }
  
 

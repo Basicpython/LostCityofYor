@@ -1,165 +1,252 @@
 {
     "Greeting": [
         {
-            "text": "Hey! I'm the Spirit 'Puzzle' by Caleb! Ok, well, I'm not really a puzzle. But I have lots of cool code under my hood! I'll talk more about this later.",
-            "time": 0,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "Hey! I'm the Spirit 'Puzzle' by Caleb! Ok, well, I'm not really a puzzle. But I have lots of cool code under my hood! I'll talk more about this later.",
+                    "time": 0,
+                    "tone": "neutral"
+                },
+                {
+                    "text": "Hey! I'm the Spirit 'Puzzle' by Caleb! Ok, well, I'm not really a puzzle. But I have lots of cool code under my hood! I'll talk more about this later.",
+                    "time": 0,
+                    "tone": "neutral"
+                },
+                {
+                    "text": "Hey! I'm the Spirit 'Puzzle' by Caleb! Ok, well, I'm not really a puzzle. But I have lots of cool code under my hood! I'll talk more about this later.",
+                    "time": 0,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "Dialogue1": [
         {
-            "text": "The premise behind what my puzzle is that I will talk to the player, just as I'm doing now.",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "The premise behind what my puzzle is that I will talk to the player, just as I'm doing now.",
+                    "time": 10,
+                    "tone": "neutral"
+                },
+                {
+                    "text": "And every once in a while I'll say a few things that the user has to pick up on.",
+                    "time": 5,
+                    "tone": "neutral"
+                },
+                {
+                    "text": "This information will be hidden amongst other dialogue that also help immerse the player into a world full of rich lore and details.",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         },
         {
-            "text": "And every once in a while I'll say a few things that the user has to pick up on.",
-            "time": 5,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "It will be the player's job to figure out what to do with this information. They'll have to complete a task that they normally wouldn't be able to without a piece of information I give them.",
+                    "time": 15,
+                    "tone": "neutral"
+                },
+                {
+                    "text": "What that task is is still undetermined. Not because I'm lazy but because I prioritized getting the idea of the puzzle actuallized before the actual puzzle itself.",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         },
         {
-            "text": "This information will be hidden amongst other dialogue that also help immerse the player into a world full of rich lore and details.",
-            "time": 10,
-            "tone": "neutral",
-            "said": false
-        },
-        {
-            "text": "It will be the player's job to figure out what to do with this information. They'll have to complete a task that they normally wouldn't be able to without a piece of information I give them.",
-            "time": 15,
-            "tone": "neutral",
-            "said": false
-        },
-        {
-            "text": "What that task is is still undetermined. Not because I'm lazy but because I prioritized getting the idea of the puzzle actuallized before the actual puzzle itself.",
-            "time": 10,
-            "tone": "neutral",
-            "said": false
-        },
-        {
-            "text": "So far, I'm happy with how this is coming along so far. It did take 12+ hours to get it to this stage however... Anyways, I'll get back to you after you solve the next puzzle! Good luck!",
-            "time": 15,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "So far, I'm happy with how this is coming along so far. It did take 12+ hours to get it to this stage however... Anyways, I'll get back to you after you solve the next puzzle! Good luck!",
+                    "time": 15,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "CompletedPuzzle1": [
         {
-            "text": "Great job! You completed the first puzzle!",
-            "time": 0,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "Great job! You completed the first puzzle!",
+                    "time": 0,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "Dialogue2": [
         {
-            "text": "C2-0",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "C2-0",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         },
         {
-            "text": "C2-1",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "C2-1",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "CompletedPuzzle2": [
         {
-            "text": "Yippee! You finished the second puzzle! The door in the middle should open.",
-            "time": 0,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "Yippee! You finished the second puzzle! The door in the middle should open.",
+                    "time": 0,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "Dialogue3": [
         {
-            "text": "C3-0",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "C3-0",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         },
         {
-            "text": "C3-1",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "C3-1",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "CompletedPuzzle3": [
         {
-            "text": "Wowza! You completed the third puzzle!",
-            "time": 0,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "Wowza! You completed the third puzzle!",
+                    "time": 0,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "Dialogue4": [
         {
-            "text": "C4-0",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "C4-0",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         },
         {
-            "text": "C4-1",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "C4-1",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "CompletedPuzzle4": [
         {
-            "text": "Hey! This is my puzzle! It's not done so it's passed automatically.",
-            "time": 0,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "Hey! This is my puzzle! It's not done so it's passed automatically.",
+                    "time": 0,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "Dialogue5": [
         {
-            "text": "C5-0",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "C5-0",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         },
         {
-            "text": "C5-1",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "C5-1",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "CompletedPuzzle5": [
         {
-            "text": "You finished the last puzzle! Congrats! You beat the game!",
-            "time": 0,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "You finished the last puzzle! Congrats! You beat the game!",
+                    "time": 0,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "Farewell": [
         {
-            "text": "That's all folks!",
-            "time": 0,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "That's all folks!",
+                    "time": 0,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ],
     "Idle": [
         {
-            "text": "I-0",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "I-0",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         },
         {
-            "text": "I-1",
-            "time": 10,
-            "tone": "neutral",
+            "lines": [
+                {
+                    "text": "I-1",
+                    "time": 10,
+                    "tone": "neutral"
+                }
+            ],
             "said": false
         }
     ]
