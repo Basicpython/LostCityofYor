@@ -3,19 +3,44 @@
         {
             "lines": [
                 {
-                    "text": "Hey! I'm the Spirit 'Puzzle' by Caleb! Ok, well, I'm not really a puzzle. But I have lots of cool code under my hood! I'll talk more about this later.",
+                    "text": "Woah! Are you a real person? Like a living, breathing, person?",
+                    "time": 0,
+                    "tone": "surprise1"
+                },
+                {
+                    "text": "No one's been down here in, like, uhh. Well a really long time!",
+                    "time": 0,
+                    "tone": "happy2"
+                },
+                {
+                    "text": "Aside from that one guy who came down here not that long ago. That guy was weird. He would not shut up about some treasure or whatever.",
                     "time": 0,
                     "tone": "neutral"
                 },
                 {
-                    "text": "Hey! I'm the Spirit 'Puzzle' by Caleb! Ok, well, I'm not really a puzzle. But I have lots of cool code under my hood! I'll talk more about this later.",
+                    "text": "Though I never actually saw him leave with that treasure... I wonder what happened to him...",
+                    "time": 0,
+                    "tone": "thinking"
+                },
+                {
+                    "text": "You're not after some stupid treasure, are you? You're here to save me, right?",
+                    "time": 0,
+                    "tone": "question"
+                },
+                {
+                    "text": "Hah! I knew it! I knew they'd notice I was gone and send someone to look for me!",
+                    "time": 0,
+                    "tone": "happy2"
+                },
+                {
+                    "text": "Anyways, it looks like they way you came is blocked off now. The same thing happened to that other guy. I think he was trying to do something with these contraptions to open this other door.",
                     "time": 0,
                     "tone": "neutral"
                 },
                 {
-                    "text": "Hey! I'm the Spirit 'Puzzle' by Caleb! Ok, well, I'm not really a puzzle. But I have lots of cool code under my hood! I'll talk more about this later.",
+                    "text": "I was never good at puzzles. Good thing you're here! You're good with puzzles, right? I'll leave you to it.",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "question"
                 }
             ],
             "said": false
@@ -25,19 +50,24 @@
         {
             "lines": [
                 {
-                    "text": "The premise behind what my puzzle is that I will talk to the player, just as I'm doing now.",
-                    "time": 10,
+                    "text": "Wow, these look complicated. I always avoided the complicated things and just explored. That was always my thing.",
+                    "time": 6,
                     "tone": "neutral"
                 },
                 {
-                    "text": "And every once in a while I'll say a few things that the user has to pick up on.",
+                    "text": "I think that's how I ended up here actually. I probably wandered in here and forgot how to get out. Sounds like something I'd do!",
+                    "time": 6,
+                    "tone": "happy2"
+                },
+                {
+                    "text": "It's weird that I don't remember how I got here though...",
                     "time": 5,
-                    "tone": "neutral"
+                    "tone": "thinking2"
                 },
                 {
-                    "text": "This information will be hidden amongst other dialogue that also help immerse the player into a world full of rich lore and details.",
-                    "time": 10,
-                    "tone": "neutral"
+                    "text": "...",
+                    "time": 2,
+                    "tone": "thinking3" 
                 }
             ],
             "said": false
@@ -45,14 +75,24 @@
         {
             "lines": [
                 {
-                    "text": "It will be the player's job to figure out what to do with this information. They'll have to complete a task that they normally wouldn't be able to without a piece of information I give them.",
-                    "time": 15,
+                    "text": "Hey, those colorful blocks on that table. It looks like a game I used to play when I was a child. 'Simon Says' I think it was called.",
+                    "time": 7,
                     "tone": "neutral"
                 },
                 {
-                    "text": "What that task is is still undetermined. Not because I'm lazy but because I prioritized getting the idea of the puzzle actuallized before the actual puzzle itself.",
+                    "text": "I was the best at it, naturally.",
+                    "time": 3,
+                    "tone": "happy3"
+                },
+                {
+                    "text": "Gwen would get so mad that she was the first to lose each time. And Lucas and I were rivals. Out of all of our friends, he was the best shot at beating me.",
                     "time": 10,
-                    "tone": "neutral"
+                    "tone": "reminiscent1"
+                },
+                {
+                    "text": "I wonder what they're doing now? Maybe when we get out of here, we can all go play some game together!",
+                    "time": 7,
+                    "tone": "reminiscent2"
                 }
             ],
             "said": false
@@ -60,9 +100,64 @@
         {
             "lines": [
                 {
-                    "text": "So far, I'm happy with how this is coming along so far. It did take 12+ hours to get it to this stage however... Anyways, I'll get back to you after you solve the next puzzle! Good luck!",
-                    "time": 15,
+                    "text": "That big contraption in the room over there, it looks like something we used to weigh our fish on at the market. But this one's a lot bigger.",
+                    "time": 8,
                     "tone": "neutral"
+                },
+                {
+                    "text": "If it's a scale, I wonder what it's supposed to weigh?",
+                    "time": 4,
+                    "tone": "thinking"
+                },
+                {
+                    "text": "Back at the market, my Grandpa used to own a shop selling all sort of fish and sealife. It was the most popular seafood stand in Caldesh!",
+                    "time": 8,
+                    "tone": "happy2"
+                },
+                {
+                    "text": "This one time, he caught this huuuge black-headed titan garr that took him half the day to reel in.",
+                    "time": 6,
+                    "tone": "neutral"
+                },
+                {
+                    "text": "When he finally got it out of the water and up on the scale, they ran out of weights to balance it with! They had to borrow weights from a nearby fruit vendor.",
+                    "time": 9,
+                    "tone": "happy2"
+                },
+                {
+                    "text": "But before they could actually balance the weights, the scale broke! The arms snapped right off!",
+                    "time": 6,
+                    "tone": "happy3"
+                },
+                {
+                    "text": "The governer was so impressed that he bought the fish for twice what the weight was before the scale snapped and threw a fiest for the entire village.",
+                    "time": 9,
+                    "tone": "happy2"
+                },
+                {
+                    "text": "Grandpa smoked the beast for two whole days! That was the best fish I had ever tasted to this day!",
+                    "time": 7,
+                    "tone": "happy3"
+                },
+                {
+                    "text": "...",
+                    "time": 5,
+                    "tone": "none"
+                },
+                {
+                    "text": "He died two months later...",
+                    "time": 6,
+                    "tone": "sad1"
+                },
+                {
+                    "text": "...",
+                    "time": 6,
+                    "tone": "none"
+                },
+                {
+                    "text": "I can't not think about him every time I eat some well cooked fish...",
+                    "time": 6,
+                    "tone": "sad2"
                 }
             ],
             "said": false
@@ -72,9 +167,34 @@
         {
             "lines": [
                 {
-                    "text": "Great job! You completed the first puzzle!",
+                    "text": "Great job! You solved the first contraption!",
+                    "time": 0,
+                    "tone": "happy1"
+                },
+                {
+                    "text": "Wait, be quiet.",
                     "time": 0,
                     "tone": "neutral"
+                },
+                {
+                    "text": "...",
+                    "time": 0,
+                    "tone": "none"
+                },
+                {
+                    "text": "Did you hear that?",
+                    "time": 0,
+                    "tone": "question"
+                },
+                {
+                    "text": "It sounded like some mechanism in the wall near the next door just moved.",
+                    "time": 0,
+                    "tone": "neutral"
+                },
+                {
+                    "text": "Maybe if you solve the other puzzle, it will do something?",
+                    "time": 0,
+                    "tone": "question"
                 }
             ],
             "said": false
@@ -84,7 +204,7 @@
         {
             "lines": [
                 {
-                    "text": "C2-0",
+                    "text": "C2-0-0",
                     "time": 10,
                     "tone": "neutral"
                 }
@@ -94,7 +214,7 @@
         {
             "lines": [
                 {
-                    "text": "C2-1",
+                    "text": "C2-0-1",
                     "time": 10,
                     "tone": "neutral"
                 }

@@ -14,7 +14,7 @@ public enum PuzzleStateType {
         Dialogue3,
         CompletedPuzzle3,
         Dialogue4,
-        CompletedPuzzle4,
+        CompletedPuzzle4, 
         Dialogue5,
         CompletedPuzzle5,
         Farewell,
@@ -39,7 +39,7 @@ public class Spirit : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        State = PuzzleStateType.Greeting;
+        State = PuzzleStateType.Dialogue4;
     }
 
     // Update is called once per frame

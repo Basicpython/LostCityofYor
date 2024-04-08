@@ -96,7 +96,7 @@ public class DialogueManager : MonoBehaviour
         foreach (Line line in phrase.lines) {
             tmpText.text = line.text;
             dialogueOpen.OpenPanel();
-            Debug.Log($"Saying '{line.text}'");
+            Debug.Log($"SPIRIT: '{line.text}'");
 
             if (line.time > 0) {
                 for (int i = line.time; i > 0 & dialogueOpen.isOpen == true; i--) {
@@ -110,7 +110,7 @@ public class DialogueManager : MonoBehaviour
             }
             //Debug.Log("Closing dialogue");
             dialogueOpen.ClosePanel();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
         }
 
         isSpeaking = false;
@@ -133,7 +133,7 @@ public class DialogueManager : MonoBehaviour
             }
 
             //Debug.Log("Queueing idle chat.");
-            yield return new WaitForSeconds(10f); // Time between Chats
+            yield return new WaitForSeconds(30f + Random.Range(0, 60)); // Time between Chats
             foreach (Phrase phrase in phrases){
                 // thing = true;
                 if (!phrase.said) {
