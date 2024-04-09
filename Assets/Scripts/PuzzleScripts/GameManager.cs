@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour {
         }
 
         State = GameStateType.Open;
-		MiddleButtons.SetActive(false);
-		ExitButtons.SetActive(false);
+		//MiddleButtons.SetActive(false);
+		//ExitButtons.SetActive(false);
     }
 
     void Update() {
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
 				break;
             case GameStateType.SolvedPuzzle2:
 				// after the first two puzzles finish initialize the door buttons
-				MiddleButtons.SetActive(true);
+				//MiddleButtons.SetActive(true);
                 break;
             case GameStateType.SolvedPuzzle3:
                 break;
