@@ -18,6 +18,7 @@ public class PolygonSpawner : MonoBehaviour
         // Destroy previously instantiated polygon
         DestroyPreviousPolygon();
 
+        //Debug.Log("Making new ritual");
         // Calculate the angle increment
         float radialAngleIncrement = 2f * Mathf.PI / radialDegree;
 
@@ -95,12 +96,28 @@ public class PolygonSpawner : MonoBehaviour
     private void DestroyPreviousPolygon() {
         foreach (Transform child in ritualTransform.transform) {
             Destroy(child.gameObject); // destroy the child >:)
+            //Debug.Log("Destroyed previous ritual");
         }
+        Destroy(ritualObject.GetComponent<Spin>());
     }
 }
 
 // rd   rr  rs  pd  pr  ps
-// 5,   1.5,12, 3,  0.5,20 
-// 7,   2,  12, 7,  2,  5
-// 7,   2,  5,  7,  2,  12
+// 5,   1.5,12, 3,  0.5,20      star
+// 5,   1.5,16, 5,  0.5,20      rounder star
+// 7,   2,  12, 7,  2,  12/20   concentric flower
+// 7,   2,  5,  7,  2,  12      morphing flower
+
+// 3, 0.5, -30, 4, 1.5, 45      six point star
+// 3, 0.5, -30, 6, 1.5, 45      nine point star
+// 3, 0.5, -30, 8, 1.5, 45      twelve point star
+
+// 5, 0.5, -15, 3, 1.5, 25      round five point star
+// 5, 0.5, -15, 6, 1.5, 25      round ten point star
+
+// 5, 1, -15, 3, 2, 25          five point star
+// 5, 1, -15, 6, 2, 25          ten point star
+
+// 5,   3,  12, 3,  1,  20 
+
 
