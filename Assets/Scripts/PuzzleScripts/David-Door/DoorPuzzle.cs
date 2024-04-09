@@ -11,6 +11,7 @@ public class DoorPuzzle : MonoBehaviour
 	private float[] passcode;
 	private float[] currentcode;
 	private bool opened = false;
+	private float openingTime = 0;
 	private Vector3 startingPos = new Vector3(9.668083f,11.43208f,-1.252816f);
 	private Vector3 endingPos = new Vector3(9.668083f,7.35f,-1.252816f);
 	
@@ -53,8 +54,16 @@ public class DoorPuzzle : MonoBehaviour
 		
 		if (passcode[0] == currentcode[0] && passcode[1] == currentcode[1] && opened == false){
 			opened = true;
-			transform.position = Vector3.MoveTowards(startingPos, endingPos, 1 * Time.deltaTime);
+			
 		}
+		
+		if(openingTime < 1000 && opened){
+			transform.Translate(Vector3.up * Time.deltaTime);
+			openingTime = openingTime + 1;
+		}
+			
+		
 	
     } 
+	
 }
