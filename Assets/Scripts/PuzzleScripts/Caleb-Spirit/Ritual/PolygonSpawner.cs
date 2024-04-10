@@ -118,6 +118,10 @@ public class PolygonSpawner : MonoBehaviour
 // 5, 1, -15, 3, 2, 25          five point star
 // 5, 1, -15, 6, 2, 25          ten point star
 
+// 5, 0.5, -21, 6, 1.5, 25      sun thing
+// 5, 0,5, -23, 6, 1.5, 25      sun thingv2
+// 12, 1.5, 15, 5, 2, -18       wound spring
+
 // 5,   3,  12, 3,  1,  20 
 
 

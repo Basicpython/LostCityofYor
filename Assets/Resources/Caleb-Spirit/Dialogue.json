@@ -5,7 +5,7 @@
                 {
                     "text": "Woah! Are you a real person? Like a living, breathing, person?",
                     "time": 0,
-                    "tone": "surprise1"
+                    "tone": "happy3"
                 },
                 {
                     "text": "No one's been down here in, like, uhh. Well a really long time!",
@@ -15,17 +15,17 @@
                 {
                     "text": "Aside from that one guy who came down here not that long ago. That guy was weird. He would not shut up about some treasure or whatever.",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "neutral2"
                 },
                 {
                     "text": "Though I never actually saw him leave with that treasure... I wonder what happened to him...",
                     "time": 0,
-                    "tone": "thinking"
+                    "tone": "neutral1"
                 },
                 {
                     "text": "You're not after some stupid treasure, are you? You're here to save me, right?",
                     "time": 0,
-                    "tone": "question"
+                    "tone": "silly1"
                 },
                 {
                     "text": "Hah! I knew it! I knew they'd notice I was gone and send someone to look for me!",
@@ -35,12 +35,12 @@
                 {
                     "text": "Anyways, it looks like they way you came is blocked off now. The same thing happened to that other guy. I think he was trying to do something with these contraptions to open this other door.",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "neutral4"
                 },
                 {
                     "text": "I was never good at puzzles. Good thing you're here! You're good with puzzles, right? I'll leave you to it.",
                     "time": 0,
-                    "tone": "question"
+                    "tone": "silly2"
                 }
             ],
             "said": false
@@ -52,7 +52,7 @@
                 {
                     "text": "Wow, these look complicated. I always avoided the complicated things and just explored. That was always my thing.",
                     "time": 6,
-                    "tone": "neutral"
+                    "tone": "neutral2"
                 },
                 {
                     "text": "I think that's how I ended up here actually. I probably wandered in here and forgot how to get out. Sounds like something I'd do!",
@@ -62,12 +62,12 @@
                 {
                     "text": "It's weird that I don't remember how I got here though...",
                     "time": 5,
-                    "tone": "thinking2"
+                    "tone": "reminiscent1"
                 },
                 {
                     "text": "...",
                     "time": 2,
-                    "tone": "thinking3" 
+                    "tone": "none" 
                 }
             ],
             "said": false
@@ -77,7 +77,7 @@
                 {
                     "text": "Hey, those colorful blocks on that table. It looks like a game I used to play when I was a child. 'Simon Says' I think it was called.",
                     "time": 7,
-                    "tone": "neutral"
+                    "tone": "neutral3"
                 },
                 {
                     "text": "I was the best at it, naturally.",
@@ -107,7 +107,7 @@
                 {
                     "text": "If it's a scale, I wonder what it's supposed to weigh?",
                     "time": 4,
-                    "tone": "thinking"
+                    "tone": "silly1"
                 },
                 {
                     "text": "Back at the market, my Grandpa used to own a shop selling all sort of fish and sealife. It was the most popular seafood stand in Yor!",
@@ -117,7 +117,7 @@
                 {
                     "text": "This one time, he caught this huuuge black-headed titan garr that took him half the day to reel in.",
                     "time": 6,
-                    "tone": "neutral"
+                    "tone": "neutral4"
                 },
                 {
                     "text": "When he finally got it out of the water and up on the scale, they ran out of weights to balance it with! They had to borrow weights from a nearby fruit vendor.",
@@ -174,7 +174,7 @@
                 {
                     "text": "Wait, be quiet.",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "neutral2"
                 },
                 {
                     "text": "...",
@@ -184,17 +184,17 @@
                 {
                     "text": "Did you hear that?",
                     "time": 0,
-                    "tone": "question"
+                    "tone": "silly2"
                 },
                 {
                     "text": "It sounded like some mechanism in the wall near the next door just moved.",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "neutral1"
                 },
                 {
                     "text": "Maybe if you solve the other puzzle, it will do something?",
                     "time": 0,
-                    "tone": "question"
+                    "tone": "silly1"
                 }
             ],
             "said": false
@@ -204,9 +204,34 @@
         {
             "lines": [
                 {
-                    "text": "C2-0-0",
-                    "time": 10,
-                    "tone": "neutral"
+                    "text": "Hey, did you know that back home in Yor, we have this native species of bird called the great eared nightjar.",
+                    "time": 8,
+                    "tone": "neutral1"
+                },
+                {
+                    "text": "They have feathers on top of their head that makes it look like they have little horns!",
+                    "time": 6,
+                    "tone": "happy3"
+                },
+                {
+                    "text": "And their feathers make it look like they're covered in patterned scales.",
+                    "time": 5,
+                    "tone": "happy1"
+                },
+                {
+                    "text": "They look like mini dragons in the our myths we tell back home!",
+                    "time": 4,
+                    "tone": "reminiscent1"
+                },
+                {
+                    "text": "I think they're actually distant descendants of the beasts of legend.",
+                    "time": 5,
+                    "tone": "scared4"
+                },
+                {
+                    "text": "Fascinating little creatures.",
+                    "time": 8,
+                    "tone": "neutral1"
                 }
             ],
             "said": false
@@ -214,9 +239,84 @@
         {
             "lines": [
                 {
-                    "text": "C2-0-1",
-                    "time": 10,
-                    "tone": "neutral"
+                    "text": "AHH! A RAT!!",
+                    "time": 4,
+                    "tone": "scared2"
+                },
+                {
+                    "text": "Oh nevermind, it was just a spider.",
+                    "time": 3,
+                    "tone": "neutral3"
+                }
+            ],
+            "said": false
+        },
+        {
+            "lines": [
+                {
+                    "text": "Hey you never told me your name. Who are you anyways?",
+                    "time": 4,
+                    "tone": "silly1"
+                },
+                {
+                    "text": "Wait! Let me guess...",
+                    "time": 2,
+                    "tone": "neutral2"
+                },
+                {
+                    "text": "Your name is...",
+                    "time": 2,
+                    "tone": "happy2"
+                },
+                {
+                    "text": "Jerry!",
+                    "time": 2,
+                    "tone": "neutral3"
+                },
+                {
+                    "text": "Or maybe Kevin?",
+                    "time": 2,
+                    "tone": "neutral4"
+                },
+                {
+                    "text": "Did I get it right?",
+                    "time": 2,
+                    "tone": "happy1"
+                },
+                {
+                    "text": "I always had a knack for guessing peoples names.",
+                    "time": 4,
+                    "tone": "happy3"
+                },
+                {
+                    "text": "My name? Oh right! Sorry, I forget about that part sometimes! My name's ...",
+                    "time": 5,
+                    "tone": "neutral1"
+                },
+                {
+                    "text": "...",
+                    "time": 2,
+                    "tone": "none"
+                },
+                {
+                    "text": "My name is ...",
+                    "time": 3,
+                    "tone": "reminiscent4"
+                },
+                {
+                    "text": "I...",
+                    "time": 3,
+                    "tone": "silly2"
+                },
+                {
+                    "text": "I can't remember my name...",
+                    "time": 5,
+                    "tone": "none"
+                },
+                {
+                    "text": "Why can't I remember my name?",
+                    "time": 5,
+                    "tone": "sad6"
                 }
             ],
             "said": false
@@ -226,9 +326,19 @@
         {
             "lines": [
                 {
-                    "text": "Yippee! You finished the second puzzle! The door in the middle should open.",
+                    "text": "Listen! Did you hear that?",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "silly1"
+                },
+                {
+                    "text": "I think the mechanism near the next door just clicked.",
+                    "time": 0,
+                    "tone": "neutral1"
+                },
+                {
+                    "text": "Maybe the door unlocked! Go check it!",
+                    "time": 0,
+                    "tone": "happy2"
                 }
             ],
             "said": false
