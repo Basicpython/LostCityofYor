@@ -13,6 +13,7 @@ public class ExitPuzzle : MonoBehaviour
 	private float[] passcode;
 	private float[] currentcode;
 	private bool opened = false;
+	private float openTime = 0;
 	private Vector3 startingPos = new Vector3(9.52f,11.21f,-9.36f);
 	private Vector3 endingPos = new Vector3(9.52f,8.35f,-9.36f);
 	
@@ -96,9 +97,12 @@ public class ExitPuzzle : MonoBehaviour
 		}
 		
 		if (passcode[3] == currentcode[3] && opened == false){
-			print("Opened");
 			opened = true;
-			transform.position = Vector3.MoveTowards(startingPos, endingPos, 1 * Time.deltaTime);
+		}
+		
+		if(openTime < 1000 && opened){
+			transform.Translate(Vector3.up * Time.deltaTime);
+			openTime = openTime + 1;
 		}
 	
     } 
