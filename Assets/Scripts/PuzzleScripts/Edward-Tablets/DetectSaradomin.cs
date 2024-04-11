@@ -8,10 +8,12 @@ public class DetectSaradomin : MonoBehaviour
     public TabletManager tabletManager;
     public SoundManager soundManager;
 
+    // targetPosition represents socket area
     public Vector3 targetPosition = new Vector3(4.6937f, 1.1525f, 12.0591f);
     public float positionRange = 0.1f;
     public float delay = 0.1f;
 
+    // Add a delay so detection is smoother
     private void OnTriggerEnter(Collider other)
     {
         StartCoroutine(CheckPositionAfterDelay(other));
@@ -20,7 +22,7 @@ public class DetectSaradomin : MonoBehaviour
     private IEnumerator CheckPositionAfterDelay(Collider other)
     {
         yield return new WaitForSeconds(delay);
-
+        // Provide slight wiggle room. Make requirement less strict fot target area
         float distanceToTarget = Vector3.Distance(other.transform.position, targetPosition);
 
         GameObject socketObject = GameObject.FindGameObjectWithTag("sDet");
@@ -32,6 +34,7 @@ public class DetectSaradomin : MonoBehaviour
             if (other.CompareTag("SaradominTablet"))
             {
                 tabletManager.saradominPlacedCorrect = true;
+                // Disable Components
                 XRGrabInteractable grabInteractable = other.GetComponent<XRGrabInteractable>();
                 grabInteractable.enabled = false;
 

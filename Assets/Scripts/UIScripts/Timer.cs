@@ -5,7 +5,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float totalTime = 60.0f; 
+    public float totalTime = 900.0f; 
     private float currentTime; 
     private TextMeshProUGUI textMesh;
 
