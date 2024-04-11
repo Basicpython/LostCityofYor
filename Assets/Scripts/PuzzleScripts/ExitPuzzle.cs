@@ -10,7 +10,9 @@ public class ExitPuzzle : MonoBehaviour
 	public GameObject SpiritButton;
 	public GameObject TabletButton;
 	public GameObject ActivatedButton;
-	private float[] passcode;
+	public GameObject gameWinCanvas;
+
+    private float[] passcode;
 	private float[] currentcode;
 	private bool opened = false;
 	private float openTime = 0;
@@ -31,6 +33,7 @@ public class ExitPuzzle : MonoBehaviour
 		currentcode[1] = 1f;
 		currentcode[2] = 4f;
 		currentcode[3] = 3f;
+        gameWinCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -103,6 +106,9 @@ public class ExitPuzzle : MonoBehaviour
 		if(openTime < 1000 && opened){
 			transform.Translate(Vector3.up * Time.deltaTime);
 			openTime = openTime + 1;
+			if (openTime == 1000) {
+				gameWinCanvas.SetActive(true);
+			}
 		}
 	
     } 
