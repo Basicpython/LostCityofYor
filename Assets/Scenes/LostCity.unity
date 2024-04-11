@@ -11495,7 +11495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tabletManager: {fileID: 2091645910}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1114248995}
   targetPosition: {x: 4.6593, y: 1.149, z: 10.628}
   positionRange: 0.1
   delay: 0.1
@@ -22922,7 +22922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tabletManager: {fileID: 2091645910}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1114248995}
   targetPosition: {x: 4.6943, y: 1.151, z: 9.902}
   positionRange: 0.1
   delay: 0.1
@@ -23521,7 +23521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tabletManager: {fileID: 2091645910}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1114248995}
   targetPosition: {x: 4.6937, y: 1.1525, z: 12.0591}
   positionRange: 0.1
   delay: 0.1
@@ -28577,7 +28577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tabletManager: {fileID: 2091645910}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1114248995}
   targetPosition: {x: 4.6822, y: 1.148, z: 11.283}
   positionRange: 0.1
   delay: 0.1
@@ -29528,7 +29528,7 @@ MonoBehaviour:
   zamorakStartPosition: {fileID: 904507546}
   guthixStartPosition: {fileID: 1245033277}
   ancientStartPosition: {fileID: 772806371}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1114248995}
 --- !u!54 &2091645911
 Rigidbody:
   m_ObjectHideFlags: 0
