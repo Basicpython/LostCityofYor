@@ -10,12 +10,6 @@ public class TabletManager : MonoBehaviour
     public bool guthixPlacedCorrect;
     public bool ancientPlacedCorrect;
 
-    public bool saradominPlaced;
-    public bool zamorakPlaced;
-    public bool guthixPlaced;
-    public bool ancientPlaced;
-
-    // Variables to hold the tablet GameObjects
     public GameObject saradominTablet;
     public GameObject zamorakTablet;
     public GameObject guthixTablet;
@@ -23,7 +17,11 @@ public class TabletManager : MonoBehaviour
 
     public GameObject symbol3;
 
-    // Set default placement, correct placement
+    public Transform saradominStartPosition;
+    public Transform zamorakStartPosition;
+    public Transform guthixStartPosition;
+    public Transform ancientStartPosition;
+
     private void Start()
     {
         saradominPlacedCorrect = false;
@@ -31,38 +29,36 @@ public class TabletManager : MonoBehaviour
         guthixPlacedCorrect = false;
         ancientPlacedCorrect = false;
 
-        saradominPlaced = false;
-        zamorakPlaced = false;
-        guthixPlaced = false;
-        ancientPlaced = false;
-
         symbol3.SetActive(false);
     }
 
-    // Tablets are in the correct order if all placement flags are true
-    private bool CheckTabletOrder()
+    public void ResetTabletPosition(GameObject tablet)
     {
-        return saradominPlacedCorrect && zamorakPlacedCorrect && guthixPlacedCorrect && ancientPlacedCorrect;
-    }
-
-    private void Update()
-    {
-        if (saradominPlaced && zamorakPlaced && guthixPlaced && ancientPlaced)
+        if (tablet.CompareTag("SaradominTablet"))
         {
-            if (!CheckTabletOrder())
-            {
-                Debug.Log("Incorrect Order !!!");
-                symbol3.SetActive(false);
-            }
-            else
-            {
-                Debug.Log("All Tablets Are In The Correct Spot !!!");
-                GameManager.instance.NextState();
-                symbol3.SetActive(true);
-            }
+            tablet.transform.position = saradominStartPosition.position;
+        }
+        else if (tablet.CompareTag("ZamorakTablet"))
+        {
+            tablet.transform.position = zamorakStartPosition.position;
+        }
+        else if (tablet.CompareTag("GuthixTablet"))
+        {
+            tablet.transform.position = guthixStartPosition.position;
+        }
+        else if (tablet.CompareTag("AncientTablet"))
+        {
+            tablet.transform.position = ancientStartPosition.position;
         }
     }
 
-
-   
+    private void Update()
+    {      
+        if(saradominPlacedCorrect && zamorakPlacedCorrect && guthixPlacedCorrect && ancientPlacedCorrect)
+        {
+            GameManager.instance.NextState();
+            symbol3.SetActive(true);
+        }
+       
+    }
 }

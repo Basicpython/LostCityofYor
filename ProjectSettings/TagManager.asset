@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Anchor
+  - GuthixTablet
+  - AncientTablet
+  - SaradominTablet
+  - ZamorakTablet
+  - aDet
+  - sDet
+  - gDet
+  - zDet
   layers:
   - Default
   - TransparentFX

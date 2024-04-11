@@ -1,32 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DetectZamorak : MonoBehaviour
 {
     public TabletManager tabletManager;
 
+    public Vector3 targetPosition = new Vector3(4.67f, 1.042f, 11.249f);
+    public float positionRange = 0.01f;
+    public float delay = 0.1f;
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "ZamorakTablet")
-        {
-            tabletManager.zamorakPlacedCorrect = true;
-            tabletManager.zamorakPlaced = true;
-        }
-        else
-        {
-            tabletManager.zamorakPlacedCorrect = false;
-            tabletManager.zamorakPlaced = true;
-        }
+        StartCoroutine(CheckPositionAfterDelay(other));
     }
 
-    // Tablet Removed, Reset to False
-    private void OnTriggerExit(Collider other)
+    private IEnumerator CheckPositionAfterDelay(Collider other)
     {
-        if (other.CompareTag("ZamorakTablet"))
+        yield return new WaitForSeconds(delay);
+
+        float distanceToTarget = Vector3.Distance(other.transform.position, targetPosition);
+
+        GameObject socketObject = GameObject.FindGameObjectWithTag("zDet");
+        XRSocketInteractor socketInteractor = socketObject.GetComponent<XRSocketInteractor>();
+
+        if (distanceToTarget < positionRange)
         {
-            tabletManager.zamorakPlacedCorrect = false;
-            tabletManager.zamorakPlaced = false;
+            if (other.CompareTag("ZamorakTablet"))
+            {
+                tabletManager.zamorakPlacedCorrect = true;
+                XRGrabInteractable grabInteractable = other.GetComponent<XRGrabInteractable>();
+                grabInteractable.enabled = false;
+
+                socketInteractor.enabled = false;
+
+                Rigidbody rigidbody = other.GetComponent<Rigidbody>();
+                rigidbody.isKinematic = true;
+            }
+            else
+            {
+                socketInteractor.enabled = false;
+
+                tabletManager.ResetTabletPosition(other.gameObject);
+
+                socketInteractor.enabled = true;
+            }
         }
     }
 }
