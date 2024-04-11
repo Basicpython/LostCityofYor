@@ -27,14 +27,14 @@ public class RitualManager : MonoBehaviour {
 
         //polygonSpawner.SpawnPolygon(3, 2f,  10, 3,  1f,  20 );
         //polygonSpawner.SpawnPolygon(7, 1.5f, 5, 7, 1.5f, 12);
-        polygonSpawner.SpawnPolygon(5, 0.5f, -21, 6, 1.5f, 25);
+        //polygonSpawner.SpawnPolygon(5, 0.5f, -21, 6, 1.5f, 25);
 
-        radialDegree = 3;
-        radialRadius = 2f;
-        radialSpeed = 10;
-        peripheralDegree = 3;
-        peripheralRadius = 1f;
-        peripheralSpeed = 20;
+        radialDegree = 5;
+        radialRadius = 0.5f;
+        radialSpeed = -21;
+        peripheralDegree = 6;
+        peripheralRadius = 1.5f;
+        peripheralSpeed = 25;
 
         completed = false;
     }

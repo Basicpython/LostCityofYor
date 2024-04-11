@@ -456,59 +456,64 @@
         {
             "lines": [
                 {
+                    "text": "/// PAST THIS POINT IS UNFINISHED ///",
+                    "time": 4,
+                    "tone": "none"
+                },
+                {
                     "text": "'I'll be right back.' I said. When I left home that day.",
                     "time": 4,
-                    "tone": "neutral"
+                    "tone": "none"
                 },
                 {
                     "text": "It was all so normal. I was going back to explore that temple I found in the woods I spotted the day before.",
                     "time": 7,
-                    "tone": "happy_2"
+                    "tone": "none"
                 },
                 {
                     "text": "I didn't even say good bye to my parents, that's how often I went exploring. It was so regular.",
                     "time": 6,
-                    "tone": "happy_2"
+                    "tone": "none"
                 },
                 {
                     "text": "I wish I would have known...",
                     "time": 3,
-                    "tone": "happy_2"
+                    "tone": "none"
                 },
                 {
                     "text": "I wish I could've somehow known not to come to this God-forsaken temple.",
                     "time": 4,
-                    "tone": "happy_2"
+                    "tone": "none"
                 },
                 {
                     "text": "Or at least known to tell my family bye. That one last time.",
                     "time": 4,
-                    "tone": "happy_2"
+                    "tone": "none"
                 },
                 {
                     "text": "I can still remember leaving like it was yesterday.",
                     "time": 3,
-                    "tone": "happy_2"
+                    "tone": "none"
                 },
                 {
                     "text": "They're faces still vivid in my mind...",
                     "time": 3,
-                    "tone": "happy_2"
+                    "tone": "none"
                 },
                 {
                     "text": "Sitting on the porch, mom drinking her morning herbal brew and dad preparing to leave to run grandpa's fish stand.",
                     "time": 7,
-                    "tone": "happy_2"
+                    "tone": "none"
                 },
                 {
                     "text": "It was all just so normal.",
                     "time": 2,
-                    "tone": "happy_2"
+                    "tone": "none"
                 },
                 {
                     "text": "I wish I would've known...",
                     "time": 3,
-                    "tone": "happy_2"
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -520,7 +525,32 @@
                 {
                     "text": "Wowza! You completed the third puzzle!",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "none"
+                },
+                {
+                    "text": "/// THERE IS NO MORE DIALOGUE PAST THIS POINT ///",
+                    "time": 0,
+                    "tone": "none"
+                },
+                {
+                    "text": "I had planned dialogue up until the end of this puzzle but decided to stop here after realizing something.",
+                    "time": 0,
+                    "tone": "none"
+                },
+                {
+                    "text": "I planned to have some thoughtfully thought out hint but I'm just done...",
+                    "time": 0,
+                    "tone": "none"
+                },
+                {
+                    "text": "The ritual should be active. Here's the settings.",
+                    "time": 0,
+                    "tone": "none"
+                },
+                {
+                    "text": "radialDegree = 7 \nradialRadius = 1.5 \nradialSpeed = 5 \nperipheralDegree = 7 \nperipheralRadius = 1.5 \nperipheralSpeed = 12",
+                    "time": 0,
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -532,7 +562,7 @@
                 {
                     "text": "C4-0",
                     "time": 10,
-                    "tone": "neutral"
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -542,7 +572,7 @@
                 {
                     "text": "C4-1",
                     "time": 10,
-                    "tone": "neutral"
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -554,7 +584,7 @@
                 {
                     "text": "Hey! This is my puzzle! It's not done so it's passed automatically.",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -566,7 +596,7 @@
                 {
                     "text": "C5-0",
                     "time": 10,
-                    "tone": "neutral"
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -576,7 +606,7 @@
                 {
                     "text": "C5-1",
                     "time": 10,
-                    "tone": "neutral"
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -588,7 +618,7 @@
                 {
                     "text": "You finished the last puzzle! Congrats! You beat the game!",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -600,7 +630,7 @@
                 {
                     "text": "That's all folks!",
                     "time": 0,
-                    "tone": "neutral"
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -612,7 +642,7 @@
                 {
                     "text": "I-0",
                     "time": 10,
-                    "tone": "neutral"
+                    "tone": "none"
                 }
             ],
             "said": false
@@ -622,7 +652,7 @@
                 {
                     "text": "I-1",
                     "time": 10,
-                    "tone": "neutral"
+                    "tone": "none"
                 }
             ],
             "said": false

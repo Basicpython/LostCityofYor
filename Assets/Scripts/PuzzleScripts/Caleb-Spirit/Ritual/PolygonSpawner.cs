@@ -95,7 +95,7 @@ public class PolygonSpawner : MonoBehaviour
 
 
         // Check if the right ritual is made
-        if (radialDegree == 7 & radialRadius == 2 & radialSpeed == 5 & peripheralDegree == 7 & peripheralRadius == 2 & peripheralSpeed == 12) {
+        if (radialDegree == 7 & radialRadius == 1.5 & radialSpeed == 5 & peripheralDegree == 7 & peripheralRadius == 1.5 & peripheralSpeed == 12) {
             Debug.Log("Passed");
         }
     }
@@ -111,9 +111,11 @@ public class PolygonSpawner : MonoBehaviour
 
 // rd   rr  rs  pd  pr  ps
 // 5,   1.5,12, 3,  0.5,20      star
+// 5, 0.5, 63, 1, 1, -105       actual star
 // 5,   1.5,16, 5,  0.5,20      rounder star
-// 5, 0.5, -18, 3, 1.5, 30      rounder actual star
+// 5, 0.5, -18, 3, 1.5, 30      rounder *actual star
 // 5, 0.5, -16, 2, 1.5, 40      rounderer star
+// 5, 0.5, 84, 1, 1, -105       curly star
 // 7,   2,  12, 7,  2,  12/20   concentric flower
 // 7,   2,  5,  7,  2,  12      morphing flower    ****
 
@@ -148,3 +150,6 @@ public class PolygonSpawner : MonoBehaviour
 // 5,   3,  12, 3,  1,  20 
 
 
+// WheelTooth# = RS
+// RingTooth# = -PS
+// Holes = RR - PR

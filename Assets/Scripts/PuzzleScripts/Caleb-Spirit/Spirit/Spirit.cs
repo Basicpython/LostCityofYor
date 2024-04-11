@@ -38,10 +38,14 @@ public class Spirit : MonoBehaviour {
     public DialogueManager dialogueManager;
 
     public GameObject middleDoor; // because I dont want to change other code and I'm lazy
+    public GameObject ritual; // lazy ritual reference
+    private PolygonSpawner polygonSpawner;
 
     // Start is called before the first frame update
     void Start() {
         State = PuzzleStateType.Greeting;
+
+        polygonSpawner = ritual.GetComponent<PolygonSpawner>();
     }
 
     // Update is called once per frame
@@ -103,6 +107,10 @@ public class Spirit : MonoBehaviour {
             case PuzzleStateType.CompletedPuzzle3:
                 // Player solved Puzzle 3, yippee!
                 dialogueManager.Say(dialogueManager.GetPhrases("CompletedPuzzle3")[0]);
+                polygonSpawner.SpawnPolygon(5, 0.5f, -21, 6, 1.5f, 25);
+                if (!ritual.activeSelf) {
+                    ritual.SetActive(true);
+                }
                 NextState();
                 break;
 
@@ -124,9 +132,11 @@ public class Spirit : MonoBehaviour {
             case PuzzleStateType.Dialogue5:
                 // Player is solving Puzzle 5, small talk, hints, lore drops
                 if (GameManager.instance.State == GameStateType.SolvedPuzzle5) {
-                    NextState();
+                    // NextState();
                 } else if (!dialogueManager.isSpeaking) {
-                    dialogueManager.Chat(dialogueManager.GetPhrases("Dialogue5"));
+                    gameObject.SetActive(false);
+                    ritual.SetActive(false);
+                    // dialogueManager.Chat(dialogueManager.GetPhrases("Dialogue5"));
                 }
                 break;
             
