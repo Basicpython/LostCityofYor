@@ -95,9 +95,10 @@ public class PolygonSpawner : MonoBehaviour
 
 
         // Check if the right ritual is made
-        if (radialDegree == 7 & radialRadius == 1.5 & radialSpeed == 5 & peripheralDegree == 7 & peripheralRadius == 1.5 & peripheralSpeed == 12) {
-            Debug.Log("Passed");
-        }
+        // if (radialDegree == 7 & radialRadius == 1.5 & radialSpeed == 5 & peripheralDegree == 7 & peripheralRadius == 1.5 & peripheralSpeed == 12) {
+        //     Debug.Log("Passed");
+        //     GameManager.instance.NextState;
+        // }
     }
 
     private void DestroyPreviousPolygon() {
@@ -138,7 +139,6 @@ public class PolygonSpawner : MonoBehaviour
 // 5, 0.5, -45, 6, 1.5, 25      round concentric 10 point star
 // 5, 0.5, -60, 6, 1.5, 25      round concentric pentagon
 
-// 
 // 4, 2, -6, 3, 1, -20          4 leaf ringed clover
 // 4, 0.5, -30, 6, 1.5, 20      2x 2 leaf clover
 

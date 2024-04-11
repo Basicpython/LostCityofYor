@@ -46,6 +46,7 @@ public class Spirit : MonoBehaviour {
         State = PuzzleStateType.Greeting;
 
         polygonSpawner = ritual.GetComponent<PolygonSpawner>();
+        ritual.SetActive(false);
     }
 
     // Update is called once per frame
@@ -71,8 +72,11 @@ public class Spirit : MonoBehaviour {
             
             case PuzzleStateType.CompletedPuzzle1:
                 // Player solved Puzzle 1, yippee!
-                dialogueManager.Say(dialogueManager.GetPhrases("CompletedPuzzle1")[0]);
-                NextState();
+                if (!dialogueManager.isSpeaking) {
+                    dialogueManager.Say(dialogueManager.GetPhrases("CompletedPuzzle1")[0]);
+                    NextState();
+                }
+                
                 break;
             
             case PuzzleStateType.Dialogue2:
@@ -140,6 +144,8 @@ public class Spirit : MonoBehaviour {
                 }
                 break;
             
+
+            // should not get past this
             case PuzzleStateType.CompletedPuzzle5:
                 // Player solved Puzzle 5, yippee!
                 dialogueManager.Say(dialogueManager.GetPhrases("CompletedPuzzle5")[0]);
