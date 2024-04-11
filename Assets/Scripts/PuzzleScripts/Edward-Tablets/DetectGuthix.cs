@@ -8,8 +8,8 @@ public class DetectGuthix : MonoBehaviour
     public TabletManager tabletManager;
     public SoundManager soundManager;
 
-    public Vector3 targetPosition = new Vector3(4.67f, 1.042f, 10.6109f);
-    public float positionRange = 0.01f;
+    public Vector3 targetPosition = new Vector3(4.6593f, 1.149f, 10.628f);
+    public float positionRange = 0.1f;
     public float delay = 0.1f;
 
     private void OnTriggerEnter(Collider other)

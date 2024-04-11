@@ -8,8 +8,8 @@ public class DetectSaradomin : MonoBehaviour
     public TabletManager tabletManager;
     public SoundManager soundManager;
 
-    public Vector3 targetPosition = new Vector3(4.67f, 1.042f, 12.02f);
-    public float positionRange = 0.01f;
+    public Vector3 targetPosition = new Vector3(4.6937f, 1.1525f, 12.0591f);
+    public float positionRange = 0.1f;
     public float delay = 0.1f;
 
     private void OnTriggerEnter(Collider other)

@@ -9,8 +9,8 @@ public class DetectAncient : MonoBehaviour
     public TabletManager tabletManager;
     public SoundManager soundManager;
 
-    public Vector3 targetPosition = new Vector3(4.67f, 1.042f, 9.89f);
-    public float positionRange = 0.01f;
+    public Vector3 targetPosition = new Vector3(4.6943f, 1.1510f, 9.902f);
+    public float positionRange = 0.1f;
     public float delay = 0.1f;
 
     private void OnTriggerEnter(Collider other)
