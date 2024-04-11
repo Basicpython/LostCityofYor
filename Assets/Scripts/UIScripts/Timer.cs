@@ -9,9 +9,12 @@ public class Timer : MonoBehaviour
     private float currentTime; 
     private TextMeshProUGUI textMesh;
 
+    public GameObject endScreenCanvas;
+
     // Start is called before the first frame update
     void Start()
     {
+        endScreenCanvas.SetActive(false);
         textMesh = GetComponent<TextMeshProUGUI>(); 
         currentTime = totalTime;
     }
@@ -30,6 +33,7 @@ public class Timer : MonoBehaviour
         else
         {          
             textMesh.text = "00:00";
+            endScreenCanvas.SetActive(true);
         }
     }
 }
