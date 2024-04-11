@@ -79,6 +79,9 @@ public class DialogueManager : MonoBehaviour
     public bool isChatQueued { get; private set; }
     private Coroutine chat;
 
+    private string audioFileName;
+    private AudioSource audioSource;
+
     // Say
     public void Say(Phrase phrase) {
         if (!isSpeaking) {
@@ -98,6 +101,15 @@ public class DialogueManager : MonoBehaviour
             dialogueOpen.OpenPanel();
             Debug.Log($"SPIRIT: '{line.text}'");
 
+            AudioClip audioClip = Resources.Load<AudioClip>("Sounds/spirit_all/" + line.tone);
+
+            if (audioClip != null) {
+                audioSource = gameObject.AddComponent<AudioSource>();
+                audioSource.clip = audioClip;
+                audioSource.volume = 0.3f;
+                audioSource.Play();
+            }
+
             if (line.time > 0) {
                 for (int i = line.time; i > 0 & dialogueOpen.isOpen == true; i--) {
                     yield return new WaitForSeconds(1);
@@ -108,7 +120,9 @@ public class DialogueManager : MonoBehaviour
                     yield return new WaitForSeconds(1);
                 }
             }
-            //Debug.Log("Closing dialogue");
+
+            Destroy(audioSource);
+
             dialogueOpen.ClosePanel();
             yield return new WaitForSeconds(0.5f);
         }

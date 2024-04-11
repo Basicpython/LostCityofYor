@@ -15,21 +15,28 @@ public class RitualManager : MonoBehaviour {
     //RitualStartAnimator ritualAnimation;
     PolygonSpawner polygonSpawner;
 
-    public TextMeshProUGUI tmpComponent;    
+    public TextMeshProUGUI tmpComponent;
+
+    public bool completed;
 
     // Start is called before the first frame update
     void Start()
     {
         //ritualAnimation = GetComponent<RitualStartAnimator>();
         polygonSpawner = GetComponent<PolygonSpawner>();
-        // polygonSpawner.SpawnPolygon(5,   3,  12, 3,  1,  20 );
 
-        radialDegree = 5;
-        radialRadius = 3f;
-        radialSpeed = 12;
+        //polygonSpawner.SpawnPolygon(3, 2f,  10, 3,  1f,  20 );
+        //polygonSpawner.SpawnPolygon(7, 1.5f, 5, 7, 1.5f, 12);
+        polygonSpawner.SpawnPolygon(5, 0.5f, -21, 6, 1.5f, 25);
+
+        radialDegree = 3;
+        radialRadius = 2f;
+        radialSpeed = 10;
         peripheralDegree = 3;
         peripheralRadius = 1f;
         peripheralSpeed = 20;
+
+        completed = false;
     }
 
     // Update is called once per frame
@@ -45,36 +52,48 @@ public class RitualManager : MonoBehaviour {
 
     public void ChangeRadialDegree(int deltaRadialDegre) {
         radialDegree += deltaRadialDegre;
+        //radialDegree = Mathf.Round(radialDegree);
         Debug.Log($"radialDegree = {radialDegree}");
     }
 
     public void ChangeRadialRadius(float deltaRadialRadius) {
         radialRadius += deltaRadialRadius;
+        radialRadius = Mathf.Round(radialRadius * 10f) / 10f;
         Debug.Log($"radialRadius = {radialRadius}");
     }
 
     public void ChangeRadialSpeed(int deltaRadialSpeed) {
         radialSpeed += deltaRadialSpeed;
+        //radialSpeed = Mathf.Round(radialSpeed);
         Debug.Log($"radialSpeed = {radialSpeed}");
     }
 
     public void ChangePeripheralDegree(int deltaPeripheralDegree) {
         peripheralDegree += deltaPeripheralDegree;
+        //peripheralDegree = Mathf.Round(peripheralDegree);
         Debug.Log($"peripheralDegree = {peripheralDegree}");
     }
 
     public void ChangePeripheralRadius(float deltaPeripheralRadius) {
         peripheralRadius += deltaPeripheralRadius;
+        peripheralRadius = Mathf.Round(peripheralRadius * 10f) / 10;
         Debug.Log($"peripheralRadius = {peripheralRadius}");
     }
 
     public void ChangePeripheralSpeed(int deltaPeripheralSpeed) {
         peripheralSpeed += deltaPeripheralSpeed;
+        //peripheralSpeed = Mathf.Round(peripheralSpeed);
         Debug.Log($"peripheralSpeed = {peripheralSpeed}");
     }
 
     public void SpawnRitual() {
         polygonSpawner.SpawnPolygon(radialDegree, radialRadius, radialSpeed, peripheralDegree, peripheralRadius, peripheralSpeed);
         tmpComponent.text = $"R(D:{radialDegree}, R:{radialRadius}, S:{radialSpeed}), P(D:{peripheralDegree}, R:{peripheralRadius}, S:{peripheralSpeed})";
+        if (radialDegree == 7 & radialRadius == 2 & radialSpeed == 5 & peripheralDegree == 7 & peripheralRadius == 2 & peripheralSpeed == 12) {
+            if (!completed) {
+                completed = true;
+                GameManager.instance.NextState();
+            }
+        }
     }
 }

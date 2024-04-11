@@ -5,42 +5,42 @@
                 {
                     "text": "Woah! Are you a real person? Like a living, breathing, person?",
                     "time": 0,
-                    "tone": "happy3"
+                    "tone": "happy_3"
                 },
                 {
                     "text": "No one's been down here in, like, uhh. Well a really long time!",
                     "time": 0,
-                    "tone": "happy2"
+                    "tone": "happy_2"
                 },
                 {
                     "text": "Aside from that one guy who came down here not that long ago. That guy was weird. He would not shut up about some treasure or whatever.",
                     "time": 0,
-                    "tone": "neutral2"
+                    "tone": "neutral_2"
                 },
                 {
                     "text": "Though I never actually saw him leave with that treasure... I wonder what happened to him...",
                     "time": 0,
-                    "tone": "neutral1"
+                    "tone": "neutral_1"
                 },
                 {
                     "text": "You're not after some stupid treasure, are you? You're here to save me, right?",
                     "time": 0,
-                    "tone": "silly1"
+                    "tone": "silly_1"
                 },
                 {
                     "text": "Hah! I knew it! I knew they'd notice I was gone and send someone to look for me!",
                     "time": 0,
-                    "tone": "happy2"
+                    "tone": "happy_2"
                 },
                 {
                     "text": "Anyways, it looks like they way you came is blocked off now. The same thing happened to that other guy. I think he was trying to do something with these contraptions to open this other door.",
                     "time": 0,
-                    "tone": "neutral4"
+                    "tone": "neutral_4"
                 },
                 {
                     "text": "I was never good at puzzles. Good thing you're here! You're good with puzzles, right? I'll leave you to it.",
                     "time": 0,
-                    "tone": "silly2"
+                    "tone": "silly_2"
                 }
             ],
             "said": false
@@ -52,17 +52,17 @@
                 {
                     "text": "Wow, these look complicated. I always avoided the complicated things and just explored. That was always my thing.",
                     "time": 6,
-                    "tone": "neutral2"
+                    "tone": "neutral_2"
                 },
                 {
                     "text": "I think that's how I ended up here actually. I probably wandered in here and forgot how to get out. Sounds like something I'd do!",
                     "time": 6,
-                    "tone": "happy2"
+                    "tone": "happy_2"
                 },
                 {
                     "text": "It's weird that I don't remember how I got here though...",
                     "time": 5,
-                    "tone": "reminiscent1"
+                    "tone": "rem_1"
                 },
                 {
                     "text": "...",
@@ -77,22 +77,22 @@
                 {
                     "text": "Hey, those colorful blocks on that table. It looks like a game I used to play when I was a child. 'Simon Says' I think it was called.",
                     "time": 7,
-                    "tone": "neutral3"
+                    "tone": "neutral_3"
                 },
                 {
                     "text": "I was the best at it, naturally.",
                     "time": 3,
-                    "tone": "happy3"
+                    "tone": "happy_3"
                 },
                 {
                     "text": "Gwen would get so mad that she was the first to lose each time. And Lucas and I were rivals. Out of all of our friends, he was the best shot at beating me.",
                     "time": 10,
-                    "tone": "reminiscent1"
+                    "tone": "rem_1"
                 },
                 {
                     "text": "I wonder what they're doing now? Maybe when we get out of here, we can all go play some game together!",
                     "time": 7,
-                    "tone": "reminiscent2"
+                    "tone": "rem_2"
                 }
             ],
             "said": false
@@ -102,42 +102,42 @@
                 {
                     "text": "That big contraption in the room over there, it looks like something we used to weigh our fish on at the market. But this one's a lot bigger.",
                     "time": 8,
-                    "tone": "neutral"
+                    "tone": "neutral_1"
                 },
                 {
                     "text": "If it's a scale, I wonder what it's supposed to weigh?",
                     "time": 4,
-                    "tone": "silly1"
+                    "tone": "silly_1"
                 },
                 {
                     "text": "Back at the market, my Grandpa used to own a shop selling all sort of fish and sealife. It was the most popular seafood stand in Yor!",
                     "time": 8,
-                    "tone": "happy2"
+                    "tone": "happy_2"
                 },
                 {
                     "text": "This one time, he caught this huuuge black-headed titan garr that took him half the day to reel in.",
                     "time": 6,
-                    "tone": "neutral4"
+                    "tone": "neutral_4"
                 },
                 {
                     "text": "When he finally got it out of the water and up on the scale, they ran out of weights to balance it with! They had to borrow weights from a nearby fruit vendor.",
                     "time": 9,
-                    "tone": "happy2"
+                    "tone": "happy_2"
                 },
                 {
                     "text": "But before they could actually balance the weights, the scale broke! The arms snapped right off!",
                     "time": 6,
-                    "tone": "happy3"
+                    "tone": "happy_3"
                 },
                 {
                     "text": "The governer was so impressed that he bought the fish for twice what the weight was before the scale snapped and threw a fiest for the entire village.",
                     "time": 9,
-                    "tone": "happy2"
+                    "tone": "happy_1"
                 },
                 {
                     "text": "Grandpa smoked the beast for two whole days! That was the best fish I had ever tasted to this day!",
                     "time": 7,
-                    "tone": "happy3"
+                    "tone": "happy_2"
                 },
                 {
                     "text": "...",
@@ -147,7 +147,7 @@
                 {
                     "text": "He died two months later...",
                     "time": 6,
-                    "tone": "sad1"
+                    "tone": "sad_1"
                 },
                 {
                     "text": "...",
@@ -157,7 +157,7 @@
                 {
                     "text": "I can't not think about him every time I eat some well cooked fish...",
                     "time": 6,
-                    "tone": "sad2"
+                    "tone": "sad_2"
                 }
             ],
             "said": false
@@ -169,12 +169,12 @@
                 {
                     "text": "Great job! You solved the first contraption!",
                     "time": 0,
-                    "tone": "happy1"
+                    "tone": "happy_1"
                 },
                 {
                     "text": "Wait, be quiet.",
                     "time": 0,
-                    "tone": "neutral2"
+                    "tone": "neutral_2"
                 },
                 {
                     "text": "...",
@@ -184,17 +184,17 @@
                 {
                     "text": "Did you hear that?",
                     "time": 0,
-                    "tone": "silly2"
+                    "tone": "silly_2"
                 },
                 {
                     "text": "It sounded like some mechanism in the wall near the next door just moved.",
                     "time": 0,
-                    "tone": "neutral1"
+                    "tone": "neutral_1"
                 },
                 {
                     "text": "Maybe if you solve the other puzzle, it will do something?",
                     "time": 0,
-                    "tone": "silly1"
+                    "tone": "silly_1"
                 }
             ],
             "said": false
@@ -206,32 +206,32 @@
                 {
                     "text": "Hey, did you know that back home in Yor, we have this native species of bird called the great eared nightjar.",
                     "time": 8,
-                    "tone": "neutral1"
+                    "tone": "neutral_1"
                 },
                 {
                     "text": "They have feathers on top of their head that makes it look like they have little horns!",
                     "time": 6,
-                    "tone": "happy3"
+                    "tone": "happy_3"
                 },
                 {
                     "text": "And their feathers make it look like they're covered in patterned scales.",
                     "time": 5,
-                    "tone": "happy1"
+                    "tone": "happy_1"
                 },
                 {
                     "text": "They look like mini dragons in the our myths we tell back home!",
                     "time": 4,
-                    "tone": "reminiscent1"
+                    "tone": "rem_1"
                 },
                 {
                     "text": "I think they're actually distant descendants of the beasts of legend.",
                     "time": 5,
-                    "tone": "scared4"
+                    "tone": "scared_4"
                 },
                 {
                     "text": "Fascinating little creatures.",
                     "time": 8,
-                    "tone": "neutral1"
+                    "tone": "neutral_1"
                 }
             ],
             "said": false
@@ -240,13 +240,13 @@
             "lines": [
                 {
                     "text": "AHH! A RAT!!",
-                    "time": 4,
-                    "tone": "scared2"
+                    "time": 3,
+                    "tone": "scared_2"
                 },
                 {
                     "text": "Oh nevermind, it was just a spider.",
                     "time": 3,
-                    "tone": "neutral3"
+                    "tone": "neutral_3"
                 }
             ],
             "said": false
@@ -256,42 +256,42 @@
                 {
                     "text": "Hey you never told me your name. Who are you anyways?",
                     "time": 4,
-                    "tone": "silly1"
+                    "tone": "silly_1"
                 },
                 {
                     "text": "Wait! Let me guess...",
                     "time": 2,
-                    "tone": "neutral2"
+                    "tone": "neutral_2"
                 },
                 {
                     "text": "Your name is...",
                     "time": 2,
-                    "tone": "happy2"
+                    "tone": "happy_2"
                 },
                 {
                     "text": "Jerry!",
                     "time": 2,
-                    "tone": "neutral3"
+                    "tone": "neutral_3"
                 },
                 {
                     "text": "Or maybe Kevin?",
                     "time": 2,
-                    "tone": "neutral4"
+                    "tone": "neutral_4"
                 },
                 {
                     "text": "Did I get it right?",
                     "time": 2,
-                    "tone": "happy1"
+                    "tone": "happy_1"
                 },
                 {
                     "text": "I always had a knack for guessing peoples names.",
                     "time": 4,
-                    "tone": "happy3"
+                    "tone": "happy_3"
                 },
                 {
                     "text": "My name? Oh right! Sorry, I forget about that part sometimes! My name's ...",
                     "time": 5,
-                    "tone": "neutral1"
+                    "tone": "neutral_1"
                 },
                 {
                     "text": "...",
@@ -301,22 +301,22 @@
                 {
                     "text": "My name is ...",
                     "time": 3,
-                    "tone": "reminiscent4"
+                    "tone": "rem_4"
                 },
                 {
                     "text": "I...",
                     "time": 3,
-                    "tone": "silly2"
+                    "tone": "silly_2"
                 },
                 {
                     "text": "I can't remember my name...",
                     "time": 5,
-                    "tone": "none"
+                    "tone": "sad_1"
                 },
                 {
                     "text": "Why can't I remember my name?",
                     "time": 5,
-                    "tone": "sad6"
+                    "tone": "sad_6"
                 }
             ],
             "said": false
@@ -328,29 +328,87 @@
                 {
                     "text": "Listen! Did you hear that?",
                     "time": 0,
-                    "tone": "silly1"
+                    "tone": "silly_1"
                 },
                 {
                     "text": "I think the mechanism near the next door just clicked.",
                     "time": 0,
-                    "tone": "neutral1"
+                    "tone": "neutral_1"
                 },
                 {
                     "text": "Maybe the door unlocked! Go check it!",
                     "time": 0,
-                    "tone": "happy2"
+                    "tone": "happy_2"
                 }
             ],
             "said": false
         }
     ],
+    "OpenedMiddleDoor": [
+        {
+            "lines": [
+                {
+                    "text": "It opened! Hey that room looks exactly like this room, but with more contraptions. Great...",
+                    "time": 0,
+                    "tone": "silly_1"
+                },
+                {
+                    "text": "That area to the left looks familiar for some reason... And the thing on the right is beyond me. I think it might activate something. And is that a -",
+                    "time": 0,
+                    "tone": "neutral_1"
+                },
+                {
+                    "text": "Is th-that a... A person?",
+                    "time": 0,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "A dead person?",
+                    "time": 0,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "I- I recognize him.",
+                    "time": 0,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "That's the adventurer that came down here not that long ago.",
+                    "time": 0,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "...",
+                    "time": 0,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "It's been a lot longer than just a few days, hasn't it?",
+                    "time": 0,
+                    "tone": "happy_2"
+                }
+            ],
+            "said": false
+        }
+    ],
+
     "Dialogue3": [
         {
             "lines": [
                 {
-                    "text": "C3-0",
+                    "text": "How long have I been down here? It only feels like a day or two since I've been stuck in here. And only yesterday did I see that adventurer.",
                     "time": 10,
                     "tone": "neutral"
+                },
+                {
+                    "text": "And the more I look, the more I see the signs of wear on the bricks that only time can cause. They werent like that when I got here.",
+                    "time": 0,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "Just how long has it been...",
+                    "time": 0,
+                    "tone": "happy_2"
                 }
             ],
             "said": false
@@ -358,9 +416,99 @@
         {
             "lines": [
                 {
-                    "text": "C3-1",
-                    "time": 10,
+                    "text": "Oh my God.",
+                    "time": 3,
                     "tone": "neutral"
+                },
+                {
+                    "text": "My family...",
+                    "time": 2,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "My friends...",
+                    "time": 2,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "They're all dead.",
+                    "time": 3,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "They're all de- They...",
+                    "time": 3,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "I...",
+                    "time": 2,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "...",
+                    "time": 3,
+                    "tone": "happy_2"
+                }
+            ],
+            "said": false
+        },
+        {
+            "lines": [
+                {
+                    "text": "'I'll be right back.' I said. When I left home that day.",
+                    "time": 4,
+                    "tone": "neutral"
+                },
+                {
+                    "text": "It was all so normal. I was going back to explore that temple I found in the woods I spotted the day before.",
+                    "time": 7,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "I didn't even say good bye to my parents, that's how often I went exploring. It was so regular.",
+                    "time": 6,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "I wish I would have known...",
+                    "time": 3,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "I wish I could've somehow known not to come to this God-forsaken temple.",
+                    "time": 4,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "Or at least known to tell my family bye. That one last time.",
+                    "time": 4,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "I can still remember leaving like it was yesterday.",
+                    "time": 3,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "They're faces still vivid in my mind...",
+                    "time": 3,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "Sitting on the porch, mom drinking her morning herbal brew and dad preparing to leave to run grandpa's fish stand.",
+                    "time": 7,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "It was all just so normal.",
+                    "time": 2,
+                    "tone": "happy_2"
+                },
+                {
+                    "text": "I wish I would've known...",
+                    "time": 3,
+                    "tone": "happy_2"
                 }
             ],
             "said": false

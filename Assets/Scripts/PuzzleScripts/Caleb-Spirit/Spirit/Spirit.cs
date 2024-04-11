@@ -37,6 +37,8 @@ public class Spirit : MonoBehaviour {
 
     public DialogueManager dialogueManager;
 
+    public GameObject middleDoor; // because I dont want to change other code and I'm lazy
+
     // Start is called before the first frame update
     void Start() {
         State = PuzzleStateType.Greeting;
@@ -81,10 +83,15 @@ public class Spirit : MonoBehaviour {
             case PuzzleStateType.CompletedPuzzle2:
                 // Player solved Puzzle 2, yippee!
                 dialogueManager.Say(dialogueManager.GetPhrases("CompletedPuzzle2")[0]);
-                NextState();
+                if (!middleDoor.activeSelf) {
+                    NextState();
+                }
                 break;
 
             case PuzzleStateType.Dialogue3:
+                // Player opened middle door
+                dialogueManager.Say(dialogueManager.GetPhrases("OpenedMiddleDoor")[0]);
+
                 // Player is solving Puzzle 3, small talk, hints, lore drops
                 if (GameManager.instance.State == GameStateType.SolvedPuzzle3) {
                     NextState();

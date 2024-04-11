@@ -91,6 +91,13 @@ public class PolygonSpawner : MonoBehaviour
 
         // Radial spin speed
         RadialSpin.rotationSpeed = radialSpeed;
+
+
+
+        // Check if the right ritual is made
+        if (radialDegree == 7 & radialRadius == 2 & radialSpeed == 5 & peripheralDegree == 7 & peripheralRadius == 2 & peripheralSpeed == 12) {
+            Debug.Log("Passed");
+        }
     }
 
     private void DestroyPreviousPolygon() {
@@ -105,12 +112,15 @@ public class PolygonSpawner : MonoBehaviour
 // rd   rr  rs  pd  pr  ps
 // 5,   1.5,12, 3,  0.5,20      star
 // 5,   1.5,16, 5,  0.5,20      rounder star
+// 5, 0.5, -18, 3, 1.5, 30      rounder actual star
+// 5, 0.5, -16, 2, 1.5, 40      rounderer star
 // 7,   2,  12, 7,  2,  12/20   concentric flower
-// 7,   2,  5,  7,  2,  12      morphing flower
+// 7,   2,  5,  7,  2,  12      morphing flower    ****
 
 // 3, 0.5, -30, 4, 1.5, 45      six point star
 // 3, 0.5, -30, 6, 1.5, 45      nine point star
 // 3, 0.5, -30, 8, 1.5, 45      twelve point star
+// 4, 0.5, -18, 6, 1.6, 24      2x 4 point star
 
 // 5, 0.5, -15, 3, 1.5, 25      round five point star
 // 5, 0.5, -15, 6, 1.5, 25      round ten point star
@@ -119,8 +129,21 @@ public class PolygonSpawner : MonoBehaviour
 // 5, 1, -15, 6, 2, 25          ten point star
 
 // 5, 0.5, -21, 6, 1.5, 25      sun thing
-// 5, 0,5, -23, 6, 1.5, 25      sun thingv2
-// 12, 1.5, 15, 5, 2, -18       wound spring
+// 5, 0.5, -23, 6, 1.5, 25      sun thingv2
+// 12, 1.5, 15, 5, 2, -18       wound spring (lots)
+// 5, 0.5, -30, 6, 1.5, 25      wound spring 5
+// 5, 1, -24, 4, 1.5, 30        wound spring 5 (2?)
+// 5, 0.5, -45, 6, 1.5, 25      round concentric 10 point star
+// 5, 0.5, -60, 6, 1.5, 25      round concentric pentagon
+
+// 
+// 4, 2, -6, 3, 1, -20          4 leaf ringed clover
+// 4, 0.5, -30, 6, 1.5, 20      2x 2 leaf clover
+
+// 5, 0.5, -16, 6, 1.5, 40
+// 5, 0.5, -16, 4, 1.5, 40
+
+// 2, 1.5, -10, 4, 1.5, 40      system of planets
 
 // 5,   3,  12, 3,  1,  20 
 
