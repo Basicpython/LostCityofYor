@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class DetectZamorak : MonoBehaviour
 {
     public TabletManager tabletManager;
+    public SoundManager soundManager;
 
     public Vector3 targetPosition = new Vector3(4.67f, 1.042f, 11.249f);
     public float positionRange = 0.01f;
@@ -27,6 +28,7 @@ public class DetectZamorak : MonoBehaviour
 
         if (distanceToTarget < positionRange)
         {
+            soundManager.Play(SoundCat.STONE_SET_DOWN);
             if (other.CompareTag("ZamorakTablet"))
             {
                 tabletManager.zamorakPlacedCorrect = true;

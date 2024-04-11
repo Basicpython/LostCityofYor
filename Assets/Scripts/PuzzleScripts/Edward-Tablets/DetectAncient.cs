@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class DetectAncient : MonoBehaviour
 {
     public TabletManager tabletManager;
+    public SoundManager soundManager;
 
     public Vector3 targetPosition = new Vector3(4.67f, 1.042f, 9.89f);
     public float positionRange = 0.01f;
@@ -28,6 +29,7 @@ public class DetectAncient : MonoBehaviour
 
         if (distanceToTarget < positionRange)
         {
+            soundManager.Play(SoundCat.STONE_SET_DOWN);
             if (other.CompareTag("AncientTablet"))
             {
                 tabletManager.ancientPlacedCorrect = true;

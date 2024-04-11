@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class DetectSaradomin : MonoBehaviour
 {
     public TabletManager tabletManager;
+    public SoundManager soundManager;
 
     public Vector3 targetPosition = new Vector3(4.67f, 1.042f, 12.02f);
     public float positionRange = 0.01f;
@@ -27,6 +28,7 @@ public class DetectSaradomin : MonoBehaviour
 
         if (distanceToTarget < positionRange)
         {
+            soundManager.Play(SoundCat.STONE_SET_DOWN);
             if (other.CompareTag("SaradominTablet"))
             {
                 tabletManager.saradominPlacedCorrect = true;

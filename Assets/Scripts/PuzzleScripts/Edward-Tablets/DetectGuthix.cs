@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class DetectGuthix : MonoBehaviour
 {
     public TabletManager tabletManager;
+    public SoundManager soundManager;
 
     public Vector3 targetPosition = new Vector3(4.67f, 1.042f, 10.6109f);
     public float positionRange = 0.01f;
@@ -27,6 +28,7 @@ public class DetectGuthix : MonoBehaviour
 
         if (distanceToTarget < positionRange)
         {
+            soundManager.Play(SoundCat.STONE_SET_DOWN);
             if (other.CompareTag("GuthixTablet"))
             {
                 tabletManager.guthixPlacedCorrect = true;

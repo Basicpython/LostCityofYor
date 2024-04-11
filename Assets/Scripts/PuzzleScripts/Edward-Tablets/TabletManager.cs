@@ -22,6 +22,8 @@ public class TabletManager : MonoBehaviour
     public Transform guthixStartPosition;
     public Transform ancientStartPosition;
 
+    public SoundManager soundManager;
+
     private void Start()
     {
         saradominPlacedCorrect = false;
@@ -57,6 +59,7 @@ public class TabletManager : MonoBehaviour
         if(saradominPlacedCorrect && zamorakPlacedCorrect && guthixPlacedCorrect && ancientPlacedCorrect)
         {
             GameManager.instance.NextState();
+            soundManager.Play(SoundCat.PUZZLE_SOLVE);
             symbol3.SetActive(true);
         }
        
