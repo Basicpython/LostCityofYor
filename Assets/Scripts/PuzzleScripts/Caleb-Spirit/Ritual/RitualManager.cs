@@ -36,6 +36,8 @@ public class RitualManager : MonoBehaviour {
         peripheralRadius = 1.5f;
         peripheralSpeed = 25;
 
+        tmpComponent.text = $"R(D:{radialDegree}, R:{radialRadius}, S:{radialSpeed}), P(D:{peripheralDegree}, R:{peripheralRadius}, S:{peripheralSpeed})";
+
         completed = false;
     }
 
@@ -89,7 +91,7 @@ public class RitualManager : MonoBehaviour {
     public void SpawnRitual() {
         polygonSpawner.SpawnPolygon(radialDegree, radialRadius, radialSpeed, peripheralDegree, peripheralRadius, peripheralSpeed);
         tmpComponent.text = $"R(D:{radialDegree}, R:{radialRadius}, S:{radialSpeed}), P(D:{peripheralDegree}, R:{peripheralRadius}, S:{peripheralSpeed})";
-        if (radialDegree == 7 & radialRadius == 2 & radialSpeed == 5 & peripheralDegree == 7 & peripheralRadius == 2 & peripheralSpeed == 12) {
+        if (radialDegree == 7 & radialRadius == 1.5 & radialSpeed == 5 & peripheralDegree == 7 & peripheralRadius == 1.5 & peripheralSpeed == 12) {
             if (!completed) {
                 completed = true;
                 GameManager.instance.NextState();

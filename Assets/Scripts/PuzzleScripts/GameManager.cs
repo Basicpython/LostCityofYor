@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour {
         }
 
         State = GameStateType.Open;
+        //State = GameStateType.SolvedPuzzle3;
 		MiddleButtons.SetActive(false);
 		ExitButtons.SetActive(false);
     }

@@ -44,6 +44,7 @@ public class Spirit : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         State = PuzzleStateType.Greeting;
+        //State = PuzzleStateType.CompletedPuzzle3;
 
         polygonSpawner = ritual.GetComponent<PolygonSpawner>();
         ritual.SetActive(false);
@@ -111,10 +112,8 @@ public class Spirit : MonoBehaviour {
             case PuzzleStateType.CompletedPuzzle3:
                 // Player solved Puzzle 3, yippee!
                 dialogueManager.Say(dialogueManager.GetPhrases("CompletedPuzzle3")[0]);
+                ritual.SetActive(true);
                 polygonSpawner.SpawnPolygon(5, 0.5f, -21, 6, 1.5f, 25);
-                if (!ritual.activeSelf) {
-                    ritual.SetActive(true);
-                }
                 NextState();
                 break;
 
