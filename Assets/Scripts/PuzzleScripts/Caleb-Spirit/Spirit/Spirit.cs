@@ -11,6 +11,7 @@ public enum PuzzleStateType {
         CompletedPuzzle1,
         Dialogue2,
         CompletedPuzzle2,
+        WaitingForDoor,
         Dialogue3,
         CompletedPuzzle3,
         Dialogue4,
@@ -92,14 +93,20 @@ public class Spirit : MonoBehaviour {
             case PuzzleStateType.CompletedPuzzle2:
                 // Player solved Puzzle 2, yippee!
                 dialogueManager.Say(dialogueManager.GetPhrases("CompletedPuzzle2")[0]);
-                if (!middleDoor.activeSelf) {
+                NextState();
+                break;
+
+            case PuzzleStateType.WaitingForDoor:
+                //Debug.Log(middleDoor.transform.position.y);
+                if (middleDoor.transform.position.y > 5f) {
+                    dialogueManager.Say(dialogueManager.GetPhrases("OpenedMiddleDoor")[0]);
                     NextState();
                 }
                 break;
 
             case PuzzleStateType.Dialogue3:
                 // Player opened middle door
-                dialogueManager.Say(dialogueManager.GetPhrases("OpenedMiddleDoor")[0]);
+                
 
                 // Player is solving Puzzle 3, small talk, hints, lore drops
                 if (GameManager.instance.State == GameStateType.SolvedPuzzle3) {

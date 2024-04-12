@@ -24,6 +24,8 @@ public class TabletManager : MonoBehaviour
 
     public SoundManager soundManager;
 
+    private bool completed;
+
     private void Start()
     {
         saradominPlacedCorrect = false;
@@ -32,6 +34,8 @@ public class TabletManager : MonoBehaviour
         ancientPlacedCorrect = false;
 
         symbol3.SetActive(false);
+
+        completed = false;
     }
 
     public void ResetTabletPosition(GameObject tablet)
@@ -58,10 +62,13 @@ public class TabletManager : MonoBehaviour
     {      
         if(saradominPlacedCorrect && zamorakPlacedCorrect && guthixPlacedCorrect && ancientPlacedCorrect)
         {
-            GameManager.instance.NextState();
+            
             soundManager.Play(SoundCat.PUZZLE_SOLVE);
             symbol3.SetActive(true);
+            if (!completed) {
+                GameManager.instance.NextState();
+                completed = true;
+            }   
         }
-       
     }
 }

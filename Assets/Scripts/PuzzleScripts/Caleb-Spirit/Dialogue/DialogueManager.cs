@@ -41,6 +41,9 @@ public class DialogueManager : MonoBehaviour
             case "CompletedPuzzle2":
                 phrases = dialogue.CompletedPuzzle2;
                 break;
+            case "OpenedMiddleDoor":
+                phrases = dialogue.OpenedMiddleDoor;
+                break;
             case "Dialogue3":
                 phrases = dialogue.Dialogue3;
                 break;
@@ -173,6 +176,7 @@ public class Dialogue
     public List<Phrase> CompletedPuzzle1;
     public List<Phrase> Dialogue2;
     public List<Phrase> CompletedPuzzle2;
+    public List<Phrase> OpenedMiddleDoor;
     public List<Phrase> Dialogue3;
     public List<Phrase> CompletedPuzzle3;
     public List<Phrase> Dialogue4;
