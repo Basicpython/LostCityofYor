@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        State = GameStateType.Open;
+        State = GameStateType.Start;
         //State = GameStateType.SolvedPuzzle3;
 		MiddleButtons.SetActive(false);
 		ExitButtons.SetActive(false);
@@ -60,10 +60,12 @@ public class GameManager : MonoBehaviour {
     }
 
     private void ChangeState(GameStateType newState) {
+        Debug.Log($"Changed state from {State} to {newState}");
         State = newState;
     }
 
     public void NextState() {
         ChangeState((GameStateType)((int)State + 1));
+        
     }
 }

@@ -6,11 +6,13 @@ public class WinningObject : MonoBehaviour
 {
     public WeightScale weightScale;
     public GameObject panel;
+    private bool completed;
     // Start is called before the first frame update
     void Start()
     {
         weightScale = GameObject.Find("Left Side").GetComponent<WeightScale>();
         panel.SetActive(false);
+        completed = false;
     }
 
     void objectSwitch(){
@@ -22,7 +24,10 @@ public class WinningObject : MonoBehaviour
     void Update()
     {
         if (weightScale.registeredRigidbodies == 3){
-            objectSwitch();
+            if (!completed) {
+                objectSwitch();
+                completed = true;
+            }
         }
     }
 }
