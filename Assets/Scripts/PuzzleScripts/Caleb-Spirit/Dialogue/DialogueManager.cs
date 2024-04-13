@@ -150,7 +150,7 @@ public class DialogueManager : MonoBehaviour
             }
 
             //Debug.Log("Queueing idle chat.");
-            yield return new WaitForSeconds(30f + Random.Range(0, 60)); // Time between Chats
+            yield return new WaitForSeconds(30f + Random.Range(0, 10)); // Time between Chats
             foreach (Phrase phrase in phrases){
                 // thing = true;
                 if (!phrase.said) {
